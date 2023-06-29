@@ -19,7 +19,7 @@ export default function HeroSection() {
       </div>
 
       <div className="mt-16 flex justify-end">
-        <Link to="/#contact">
+        <Link to="mailto:joshua.edo01@gmail.com">
           <span className="title-text link">AVAILABLE FOR HIRE ↗</span>{" "}
         </Link>
       </div>

@@ -9,8 +9,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        id="contact"
-        className={`flex items-center justify-center pt-4 md:pt-10`}
+        className={`flex items-center justify-center bg-black pt-4 md:pt-10`}
       >
         <div className="w-[90%]">
           <div className="title-text pb-3 md:pb-5">Social Media & Contacts</div>

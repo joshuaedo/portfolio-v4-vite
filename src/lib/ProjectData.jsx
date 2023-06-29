@@ -10,6 +10,11 @@ const projects = [
     href: "https://joshuaedo-spotify.vercel.app/",
     year: 2023,
     demo: "https://youtu.be/RDafUnvD090",
+    overview:
+      "A recreation of the Spotify web app UI with some conditional functionality.",
+    description:
+      "Apart from rendering songs and playlists, the app also acts as a remote control for other devices where you are logged into your Spotify Account.",
+    documentation: "https://github.com/joshuaedo/spotify#readme",
   },
   {
     title: "Netflix",
@@ -21,6 +26,10 @@ const projects = [
     href: "https://joshuaedo-binge.vercel.app/",
     year: 2023,
     demo: "https://youtu.be/krHx-I6npkM",
+    overview: "A movie trailer app",
+    description:
+      "Complete with Firebase × Google user sign-in authentication, this website shows proficiency in Rest API integration along with skeletonized page loading for slow networks. ",
+    documentation: "https://github.com/joshuaedo/netflix/#readme",
   },
   {
     title: "Google",
@@ -32,6 +41,10 @@ const projects = [
     href: "https://joshuaedo-google.vercel.app/",
     year: 2023,
     demo: "https://youtu.be/qO7OML8_Pnk",
+    overview: "It's basically google.com but not quite.",
+    description:
+      "Utilizing the open source Google API, I recreated Google Search. To the casual user it's not immediately differentiable from the real website.",
+    documentation: "https://github.com/joshuaedo/google/#readme",
   },
   // {
   // title: 'Arese Sylvester',
@@ -42,6 +55,9 @@ const projects = [
   // href: 'https://www.aresesylvester.com/',
   // year: 2022,
   // demo: "https://drive.google.com/file/d/1DHGDV1PPAv0449WfFUwjy2BBQ3okfAQd/view?usp=drive_link",
+  // overview: '',
+  // description: '',
+  // documentation: '',
   //},
   {
     title: "Apple",
@@ -53,6 +69,9 @@ const projects = [
     href: "https://apple-joshuaedo.vercel.app/",
     year: 2023,
     demo: "https://twitter.com/thegr8joshua/status/1670077556521926656",
+    overview: "Apple's landing page during the unveiling of the Vision Pro.",
+    description: null,
+    documentation: null,
   },
   {
     title: "Portfolio V3",
@@ -64,6 +83,10 @@ const projects = [
     href: "https://joshuaedo-v3.vercel.app/",
     year: 2023,
     demo: null,
+    overview: "My third portfolio website.",
+    description:
+      "Built while making the transition from create-react-app to NextJs.",
+    documentation: null,
   },
   {
     title: "Blog",
@@ -75,6 +98,10 @@ const projects = [
     href: "https://joshuaedo-blog.vercel.app/",
     year: 2023,
     demo: null,
+    overview:
+      "This was built to gain experience in the utilization of GraphQL and Headless CMS.",
+    description: "Disclaimer: the articles on this website are AI-generated.",
+    documentation: null,
   },
   {
     title: "Cleander",
@@ -86,6 +113,10 @@ const projects = [
     href: "https://thecleander.netlify.app/",
     year: 2022,
     demo: null,
+    overview: "Need a housekeeper?",
+    description:
+      "This is a landing page for a fictional website where users can hire housekeepers remotely. And yes Cleander is wordplay on cleaner and Tinder :}",
+    documentation: null,
   },
   {
     title: "joshua-GPT",
@@ -97,6 +128,10 @@ const projects = [
     href: "https://t.me/joshuaedo_bot",
     year: 2023,
     demo: "https://youtu.be/yuroCFONrTo",
+    overview: "A multipurpose Telegram bot.",
+    description:
+      "Not only can it answer predefined questions about myself, this bot is also connected to the Open AI API, allowing it to function similarly to chatGPT.",
+    documentation: null,
   },
   {
     title: "Style Your Div",
@@ -108,6 +143,10 @@ const projects = [
     href: "https://style-your-div.netlify.app/",
     year: 2023,
     demo: "https://twitter.com/thegr8joshua/status/1627770957971456001",
+    overview: "Edit text directly in the DOM to style the div.",
+    description:
+      "A CSS Playground that I personally think would be a great addition to w3schools.",
+    documentation: "https://github.com/joshuaedo/style-your-div#readme",
   },
   {
     title: "Ryter",
@@ -119,6 +158,10 @@ const projects = [
     href: "https://ryter.netlify.app/",
     year: 2022,
     demo: null,
+    overview: "A productivity app for writers.",
+    description:
+      "From note-taking to speech-to-text functionality, this website is an amalgamation of 5 separate web apps that could prove useful to the average writer.",
+    documentation: "https://github.com/joshuaedo/ryter/#readme",
   },
   {
     title: "Business Card",
@@ -130,6 +173,10 @@ const projects = [
     href: "https://joshuaedocard.netlify.app/",
     year: 2023,
     demo: null,
+    overview: null,
+    description:
+      "Aptly named, it is a demo business card, built while I was in the process of understanding how to harness React's code-splitting features.",
+    documentation: null,
   },
   {
     title: "Drum Kit",
@@ -141,6 +188,10 @@ const projects = [
     href: "https://josh-drum.netlify.app/",
     year: 2022,
     demo: null,
+    overview: "Click and play",
+    description:
+      "A single page, 100vh webpage that allows users to play drum sounds by clicking buttons on the screen or some designated keys on the keyboard.",
+    documentation: null,
   },
   {
     title: "Dice Game",
@@ -152,6 +203,11 @@ const projects = [
     href: "https://thesimpledicegame.netlify.app/",
     year: 2022,
     demo: null,
+    overview:
+      "If you're looking for a virtual coin toss then this should suffice.",
+    description:
+      "Using JavaScript's Math.random(), I ensured that with each refresh there's a new winner (or a draw in some cases).",
+    documentation: null,
   },
   {
     title: "Portfolio V2",
@@ -163,6 +219,10 @@ const projects = [
     href: "https://joshuaedo-v2.vercel.app/",
     year: 2022,
     demo: null,
+    overview: "My second portfolio website.",
+    description:
+      "Not a fancy landing page by today's standards but greatly improved from the first.",
+    documentation: null,
   },
   {
     title: "Portfolio V1",
@@ -174,20 +234,23 @@ const projects = [
     href: "https://joshuaedo-v1.vercel.app/",
     year: 2022,
     demo: null,
+    overview: "My first ever attempt at a portfolio website.",
+    description: "A grounding reminder of how far I've come.",
+    documentation: null,
   },
 ];
 
 export { projects };
 
-export async function getProjects(slug) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      if (slug) {
-        const project = projects.filter((p) => p.slug === slug);
-        resolve(project);
-      } else {
-        resolve(projects);
-      }
-    }, 1000);
-  });
-}
+// export async function getProjects(slug) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       if (slug) {
+//         const project = projects.filter((p) => p.slug === slug);
+//         resolve(project);
+//       } else {
+//         resolve(projects);
+//       }
+//     }, 1000);
+//   });
+// }

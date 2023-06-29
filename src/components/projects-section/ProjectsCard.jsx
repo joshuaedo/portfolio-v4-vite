@@ -10,7 +10,7 @@ export default function ProjectsCard({ i, name, slug }) {
 
   return (
     <div className="relative px-[1.5rem] md:pl-[2rem]">
-      <Link href={`/projects/${slug}`}>
+      <Link to={`/projects/${slug}`}>
         <div
           className="flex cursor-pointer items-center justify-center"
           onMouseEnter={handleHover}

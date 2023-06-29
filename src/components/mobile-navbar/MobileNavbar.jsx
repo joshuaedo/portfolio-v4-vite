@@ -67,7 +67,7 @@ export default function MobileNavbar() {
                 </Link>
               </div>
               <div onClick={closeNavPage} className={styles.project}>
-                <Link to="/contact">
+                <Link to="mailto:joshua.edo01@gmail.com">
                   <p>Let&apos;s Talk →</p>
                 </Link>
               </div>

@@ -1,24 +1,22 @@
-import {Suspense} from 'react';
-import {BrowserRouter} from 'react-router-dom';
-import {Router} from './general/Router.jsx';
-import {Loading} from './components/Loading.jsx';
-
-export const PageWithHeader = ({children}) => (
-  <div className="flex h-full flex-col">{children}</div>
-);
+// import { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
+// import { Loading } from "./components/loader/Loading.jsx";
+import LenisScroller from "./components/smooth-scroll/LenisScroller.jsx";
+import Cursor from "./components/cursor/Cursor.jsx";
+import { Router } from "./components/router/Router.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
+import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 export const App = () => (
   <BrowserRouter>
-    <Suspense
-      fallback={
-        <PageWithHeader>
-          <Loading name="suspense"/>
-        </PageWithHeader>
-      }
-    >
-        <div className="h-full bg-indigo-50 p-4 lg:p-24">
-          <Router/>
-        </div>
-    </Suspense>
+    <div className="bg-black tracking-wider text-white">
+      <Navbar />
+      <MobileNavbar />
+      <Cursor />
+      <LenisScroller />
+      <Router />
+      <Footer />
+    </div>
   </BrowserRouter>
 );

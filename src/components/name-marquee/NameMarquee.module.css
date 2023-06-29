@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider {
+  white-space: nowrap;
+  position: relative;
+}
+
+.slider p {
+  margin: 0px;
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider p {
+    font-size: 2.5rem;
+  }
+}

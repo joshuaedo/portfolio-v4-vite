@@ -13,10 +13,10 @@ export const App = () => (
   <BrowserRouter>
     <div className="bg-black tracking-wider text-white">
       <Navbar />
-      <ScrollToTop />
       <MobileNavbar />
       <Cursor />
       <LenisScroller />
+      <ScrollToTop />
       <Router />
       <Footer />
     </div>

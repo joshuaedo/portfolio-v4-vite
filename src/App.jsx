@@ -7,7 +7,7 @@ import { Router } from "./components/router/Router.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import ScrollToTop from "./components/smooth-scroll/scrollToTop.js";
+import ScrollToTop from "./components/smooth-scroll/ScrollToTop.jsx";
 
 export const App = () => (
   <BrowserRouter>

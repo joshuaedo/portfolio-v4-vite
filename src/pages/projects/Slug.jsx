@@ -1,5 +1,6 @@
 import { projects } from "../../lib/ProjectData.jsx";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import styles from "./Projects.module.css";
 
 export function Slug() {
   const { slug } = useParams();
@@ -76,9 +77,19 @@ export function Slug() {
               </p>
               <div className="">{project[0].year}</div>
             </div>
-
-            <div className=""></div>
           </section>
+          {project[0].next && (
+            <div className="">
+              <div className="title-text pb-3 md:pb-5">Next Project</div>
+              <Link
+                to={`/projects/${project[0].next?.slug}`}
+                className={styles.project}
+              >
+                <h2 className="section-text">{project[0].next?.title}</h2>
+                <p className="text-xs md:text-sm">{project[0]?.next.year}</p>
+              </Link>
+            </div>
+          )}
         </div>
       </main>
     </>

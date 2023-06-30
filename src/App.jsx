@@ -7,7 +7,7 @@ import { Router } from "./components/router/Router.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import ScrollToTop from "./components/smooth-scroll/ScrollToTop.jsx";
+// import ScrollToTop from "./components/smooth-scroll/ScrollToTop.jsx";
 
 export function App() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ export function App() {
             <MobileNavbar />
             <Cursor />
             <LenisScroller />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
             <Router />
             <Footer />
           </>

@@ -15,6 +15,11 @@ const projects = [
     description:
       "Apart from rendering songs and playlists, the app also acts as a remote control for other devices where you are logged into your Spotify Account.",
     documentation: "https://github.com/joshuaedo/spotify#readme",
+    next: {
+      title: "Netflix",
+      year: "2023",
+      slug: "netflix",
+    },
   },
   {
     title: "Netflix",
@@ -30,6 +35,11 @@ const projects = [
     description:
       "Complete with Firebase × Google user sign-in authentication, this website shows proficiency in Rest API integration along with skeletonized page loading for slow networks. ",
     documentation: "https://github.com/joshuaedo/netflix/#readme",
+    next: {
+      title: "Google",
+      year: "2023",
+      slug: "google",
+    },
   },
   {
     title: "Google",
@@ -45,6 +55,11 @@ const projects = [
     description:
       "Utilizing the open source Google API, I recreated Google Search. To the casual user it's not immediately differentiable from the real website.",
     documentation: "https://github.com/joshuaedo/google/#readme",
+    next: {
+      title: "Apple",
+      year: "2023",
+      slug: "apple",
+    },
   },
   // {
   // title: 'Arese Sylvester',
@@ -72,6 +87,11 @@ const projects = [
     overview: "Apple's landing page during the unveiling of the Vision Pro.",
     description: null,
     documentation: null,
+    next: {
+      title: "Portfolio V3",
+      year: "2023",
+      slug: "portfolio-v3",
+    },
   },
   {
     title: "Portfolio V3",
@@ -87,7 +107,13 @@ const projects = [
     description:
       "Built while making the transition from create-react-app to NextJs.",
     documentation: null,
+    next: {
+      title: "Blog",
+      year: "2023",
+      slug: "blog",
+    },
   },
+
   {
     title: "Blog",
     src: "blog.png",
@@ -102,7 +128,13 @@ const projects = [
       "This was built to gain experience in the utilization of GraphQL and Headless CMS.",
     description: "Disclaimer; The articles on this website are AI-generated.",
     documentation: null,
+    next: {
+      title: "Cleander",
+      year: "2022",
+      slug: "cleander",
+    },
   },
+
   {
     title: "Cleander",
     src: "cleander.png",
@@ -117,6 +149,11 @@ const projects = [
     description:
       "This is a landing page for a fictional website where users can hire housekeepers remotely. And yes Cleander is wordplay on cleaner and Tinder :}",
     documentation: null,
+    next: {
+      title: "joshua-GPT",
+      year: "2023",
+      slug: "joshua-gpt",
+    },
   },
   {
     title: "joshua-GPT",
@@ -132,6 +169,11 @@ const projects = [
     description:
       "Not only can it answer predefined questions about myself, this bot is also connected to the Open AI API, allowing it to function similarly to chatGPT.",
     documentation: null,
+    next: {
+      title: "Style Your Div",
+      year: "2023",
+      slug: "style-your-div",
+    },
   },
   {
     title: "Style Your Div",
@@ -147,6 +189,11 @@ const projects = [
     description:
       "A CSS Playground that I personally think would be a great addition to w3schools.",
     documentation: "https://github.com/joshuaedo/style-your-div#readme",
+    next: {
+      title: "Ryter",
+      year: "2022",
+      slug: "ryter",
+    },
   },
   {
     title: "Ryter",
@@ -162,6 +209,11 @@ const projects = [
     description:
       "From note-taking to speech-to-text functionality, this website is an amalgamation of 5 separate web apps that could prove useful to the average writer.",
     documentation: "https://github.com/joshuaedo/ryter/#readme",
+    next: {
+      title: "Business Card",
+      year: "2023",
+      slug: "business-card",
+    },
   },
   {
     title: "Business Card",
@@ -177,6 +229,11 @@ const projects = [
     description:
       "Aptly named, it is a demo business card, built while I was in the process of understanding how to harness React's code-splitting features.",
     documentation: null,
+    next: {
+      title: "Drum",
+      year: "2022",
+      slug: "drum",
+    },
   },
   {
     title: "Drum Kit",
@@ -192,6 +249,11 @@ const projects = [
     description:
       "A single page, 100vh webpage that allows users to play drum sounds by clicking buttons on the screen or some designated keys on the keyboard.",
     documentation: null,
+    next: {
+      title: "Dice Game",
+      year: "2022",
+      slug: "dice",
+    },
   },
   {
     title: "Dice Game",
@@ -208,6 +270,11 @@ const projects = [
     description:
       "Using JavaScript's Math.random(), I ensured that with each refresh there's a new winner (or a draw in some cases).",
     documentation: null,
+    next: {
+      title: "Portfolio V2",
+      year: "2022",
+      slug: "portfolio-v2",
+    },
   },
   {
     title: "Portfolio V2",
@@ -223,6 +290,11 @@ const projects = [
     description:
       "Not a fancy landing page by today's standards but greatly improved from the first.",
     documentation: null,
+    next: {
+      title: "Portfolio V1",
+      year: "2022",
+      slug: "portfolio-v1",
+    },
   },
   {
     title: "Portfolio V1",
@@ -237,6 +309,7 @@ const projects = [
     overview: "My first ever attempt at a portfolio website.",
     description: "A grounding reminder of how far I've come.",
     documentation: null,
+    next: null,
   },
 ];
 

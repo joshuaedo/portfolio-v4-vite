@@ -2,7 +2,7 @@ export default function Likes() {
   return (
     <div className="">
       <div className="flex items-center justify-center">
-        <div className="relative h-[45vh] w-[50vw] rounded-lg bg-blue-500 text-black shadow-2xl shadow-blue-500/20 md:w-[30vw]">
+        <div className="relative h-[45vh] w-[70vw] rounded-lg bg-blue-500 text-black shadow-2xl shadow-blue-500/20 md:w-[30vw]">
           <video
             autoPlay
             muted

@@ -2,7 +2,7 @@ export default function Skills() {
   return (
     <div className="">
       <div className="flex items-center justify-center">
-        <div className="relative h-[45vh] w-[50vw] rounded-lg bg-green-500 text-black shadow-2xl shadow-green-500/20 md:w-[30vw]">
+        <div className="relative h-[45vh] w-[70vw] rounded-lg bg-green-500 text-black shadow-2xl shadow-green-500/20 md:w-[30vw]">
           <video
             autoPlay
             muted

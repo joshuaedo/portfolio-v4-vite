@@ -1,7 +1,5 @@
 import { projects } from "../../lib/ProjectData.jsx";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-
 //  title,
 //     src,
 //     slug,
@@ -16,11 +14,6 @@ import { useEffect } from "react";
 //     documentation,
 
 export function Slug() {
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
-
   const { slug } = useParams();
   const project = projects.filter((p) => p.slug === slug);
   console.log(project[0]);

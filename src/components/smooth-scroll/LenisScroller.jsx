@@ -4,11 +4,8 @@ import { useEffect } from "react";
 export default function LenisScroller() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 3.0,
-      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      smoothTouch: false,
-      touchMultiplier: 2,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
     lenis.on("scroll", (e) => {

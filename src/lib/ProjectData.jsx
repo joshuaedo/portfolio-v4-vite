@@ -100,7 +100,7 @@ const projects = [
     demo: null,
     overview:
       "This was built to gain experience in the utilization of GraphQL and Headless CMS.",
-    description: "Disclaimer: the articles on this website are AI-generated.",
+    description: "Disclaimer; The articles on this website are AI-generated.",
     documentation: null,
   },
   {

@@ -4,7 +4,8 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-4 text-lg md:flex md:p-10`}
+        id="scroller"
+        className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg md:flex`}
       >
         <div className={`inline cursor-pointer font-medium`}>
           <Link to="/">Joshua Edo</Link>

@@ -36,7 +36,7 @@ export default function Skills() {
               loop
               className="h-full w-full rounded-lg object-cover"
             >
-              <source src="/videos/next-logo.mp4" type="video/mp4" />
+              <source src="/videos/skills.mp4" type="video/mp4" />
             </video>
           ) : (
             <p className="title-text p-5 text-xs">hover?</p>

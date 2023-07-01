@@ -25,7 +25,7 @@ export default function Likes() {
               loop
               className="h-full w-full rounded-lg object-cover"
             >
-              <source src="/videos/rj-celebration.mp4" type="video/mp4" />
+              <source src="/videos/likes.mp4" type="video/mp4" />
             </video>
           ) : (
             <div className="flex h-full w-full items-center justify-center">

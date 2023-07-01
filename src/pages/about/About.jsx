@@ -6,7 +6,12 @@ import Services from "./sections/services/Services.jsx";
 export function About() {
   return (
     <div className="container-padding">
-      <section className="section-padding text-xs">who is joshua edo?</section>
+      <section className="section-padding relative text-xs">
+        who is joshua edo?
+        <div className="absolute top-40">↓</div>
+        <div className="absolute top-60">↓</div>
+        <div className="absolute top-80">↓</div>
+      </section>
       <section className="section-padding mb-[78vh]">
         <Labels />
       </section>

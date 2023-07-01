@@ -17,9 +17,9 @@ export default function Skills() {
           <p className="header-text text-white">SKILLS</p>
           <ul className="flex flex-col items-center text-xs">
             <li className="mb-3 text-lg">↓</li>
+            <li>javascript</li>
             <li>nextjs & reactjs</li>
             <li>tailwind & css</li>
-            <li>javascript</li>
             <li>attention to detail</li>
             <li>fifa</li>
           </ul>

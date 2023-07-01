@@ -16,7 +16,7 @@ export default function Likes() {
         <div
           onMouseOver={handleMouseOver}
           onMouseLeave={handleMouseLeave}
-          className="relative h-[40vh] w-[70vw] rounded-lg bg-blue-500 text-black shadow-2xl shadow-green-500/20 md:w-[30vw]"
+          className="relative h-[40vh] w-[70vw] rounded-lg bg-blue-500 text-black shadow-2xl shadow-blue-500/20 md:w-[30vw]"
         >
           {isHovered ? (
             <video
@@ -35,11 +35,11 @@ export default function Likes() {
           <p className="header-text text-7xl text-white">STUFF I LIKE</p>
           <ul className="flex flex-col items-center text-xs">
             <li className="mb-3 text-lg">↓</li>
-            <li>pizza</li>
-            <li>dan brown</li>
             <li>chess</li>
-            <li>how i met your mother</li>
+            <li>pizza</li>
             <li>chelsea</li>
+            <li>how i met your mother</li>
+            <li>dan brown</li>
           </ul>
         </div>
       </div>

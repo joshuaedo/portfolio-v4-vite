@@ -69,7 +69,7 @@ export function Slug() {
 
             <div className="mt-6 w-[90%] md:mt-0 md:w-[45%]">
               <p className="text-xs font-medium text-[#A3A3A3]">
-                (TECHNOLOGIES)
+                (TECHNOLOGIES USED)
               </p>
               <div className="">{project[0].tech}</div>
               <p className="mt-4 text-xs font-medium text-[#A3A3A3]">

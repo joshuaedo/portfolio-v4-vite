@@ -1,7 +1,7 @@
-import Labels from "./sections/Labels.jsx";
-import Skills from "./sections/Skills.jsx";
-import Likes from "./sections/Likes.jsx";
-import Services from "./sections/Services.jsx";
+import Labels from "./sections/labels/Labels.jsx";
+import Skills from "./sections/skills/Skills.jsx";
+import Likes from "./sections/likes/Likes.jsx";
+import Services from "./sections/services/Services.jsx";
 
 export function About() {
   return (

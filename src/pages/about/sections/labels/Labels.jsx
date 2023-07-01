@@ -39,7 +39,7 @@ export default function Labels() {
     <div className="">
       <div className="flex flex-col items-center justify-center">
         <div
-          className={`${styles.container} h-[45vh] w-[70vw] rounded-lg bg-purple-500 text-black shadow-2xl shadow-purple-500/20 md:h-[70vh] md:w-[70vw]`}
+          className={`${styles.container} h-[45vh] w-[70vw] cursor-pointer rounded-lg bg-purple-500 text-black shadow-2xl shadow-purple-500/20 md:h-[70vh] md:w-[70vw]`}
         >
           <span className="absolute bottom-5 left-5 z-10 font-medium text-black">
             labels↓

@@ -30,15 +30,23 @@ export default function Skills() {
           className="relative h-[45vh] w-[70vw] rounded-lg bg-green-500 text-black shadow-2xl shadow-green-500/20 md:w-[30vw]"
         >
           <video
-              autoPlay
-              muted
-              loop
-              className={`h-full w-full rounded-lg object-cover ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-            >
-              <source src="/videos/skills-2.mp4" type="video/mp4" />
-            </video>
-        
-            <p className={`title-text p-5 text-xs ${isHovered ? 'opacity-0' : 'opacity-100' }`}>hover?</p>
+            autoPlay
+            muted
+            loop
+            className={`h-full w-full rounded-lg object-cover ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <source src="/videos/skills-2.mp4" type="video/mp4" />
+          </video>
+
+          <p
+            className={`title-text absolute left-5 top-5 text-xs ${
+              isHovered ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            hover?
+          </p>
         </div>
       </div>
     </div>

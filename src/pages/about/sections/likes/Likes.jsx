@@ -18,18 +18,24 @@ export default function Likes() {
           onMouseLeave={handleMouseLeave}
           className="relative h-[40vh] w-[70vw] rounded-lg bg-blue-500 text-black shadow-2xl shadow-blue-500/20 md:w-[30vw]"
         >
-         
-            <video
-              autoPlay
-              muted
-              loop
-              className={`h-full w-full rounded-lg object-cover ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-            >
-              <source src="/videos/likes.mp4" type="video/mp4" />
-            </video>
-        
-            <p className={`title-text p-5 text-xs ${isHovered ? 'opacity-0' : 'opacity-100' }`}>hover?</p>
-        
+          <video
+            autoPlay
+            muted
+            loop
+            className={`h-full w-full rounded-lg object-cover ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <source src="/videos/likes.mp4" type="video/mp4" />
+          </video>
+
+          <p
+            className={`title-text absolute right-5 top-5 text-xs ${
+              isHovered ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            hover?
+          </p>
         </div>
         <div>
           <p className="header-text text-7xl text-white">STUFF I LIKE</p>

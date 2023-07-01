@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SpotifyPlaylist from "../spotify/Spotify.jsx";
 
 export default function Navbar() {
   return (
@@ -7,8 +8,15 @@ export default function Navbar() {
         id="scroller"
         className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg md:flex`}
       >
-        <div className={`inline cursor-pointer font-medium`}>
-          <Link to="/">Joshua Edo</Link>
+        <div className="flex">
+          <div
+            className={`mr-[14vh] flex cursor-pointer items-center font-medium`}
+          >
+            <Link to="/">Joshua Edo</Link>
+          </div>
+          <div className="flex h-[12vh] w-[25rem] items-center justify-center">
+            <SpotifyPlaylist />
+          </div>
         </div>
         <div className={`flex cursor-pointer justify-end space-x-10`}>
           <div className="flex w-[20vw] items-center justify-around ">

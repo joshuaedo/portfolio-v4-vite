@@ -31,12 +31,14 @@ export default function NameMarquee() {
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>
-            <b>Edo</b> • Joshua • <i>THOMAS</i> • Akpan •{" "}
-            <span className="">ANIEKAN</span> • =) •
+            <b>Edo</b> • Joshua • <i>THOMAS</i> •{" "}
+            <span className="font-medium">Akpan</span> •{" "}
+            <span className="font-semibold italic">ANIEKAN</span> • =) •
           </p>
           <p ref={secondText}>
-            <b>Edo</b> • Joshua • <i>THOMAS</i> • Akpan •{" "}
-            <span className="">ANIEKAN</span> • =) •
+            <b>Edo</b> • Joshua • <i>THOMAS</i> •{" "}
+            <span className="font-medium">Akpan</span> •{" "}
+            <span className="font-semibold italic">ANIEKAN</span> • =) •
           </p>
         </div>
       </div>

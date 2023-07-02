@@ -47,4 +47,8 @@
   .project {
     padding: 40px 0;
   }
+
+  .project:hover {
+    opacity: 1;
+  }
 }

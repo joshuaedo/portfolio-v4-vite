@@ -1,4 +1,4 @@
-import { projects } from "../../lib/ProjectData.jsx";
+import { projects } from "../../database/ProjectData.jsx";
 import { useParams, Link } from "react-router-dom";
 import styles from "./Projects.module.css";
 

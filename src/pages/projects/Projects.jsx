@@ -2,7 +2,7 @@ import styles from "./Projects.module.css";
 import { useState } from "react";
 import Project from "./components/project/Project.jsx";
 import Modal from "./components/modal/Modal.jsx";
-import { projects } from "../../lib/ProjectData.jsx";
+import { projects } from "../../database/ProjectData.jsx";
 
 export function Projects() {
   const [modal, setModal] = useState({ active: false, index: 0 });

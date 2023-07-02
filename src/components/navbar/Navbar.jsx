@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 import SpotifyPlaylist from "../spotify/Spotify.jsx";
+import { SpotifyLogo } from "../spotify/Spotify.jsx";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleStopHover = () => {
+    setIsHovered(false);
+  };
+
   return (
     <>
       <nav
@@ -14,8 +26,13 @@ export default function Navbar() {
           >
             <Link to="/">Joshua Edo</Link>
           </div>
-          <div className="flex h-[12vh] w-[25rem] items-center justify-center">
-            <SpotifyPlaylist />
+          <div
+            onMouseEnter={handleHover}
+            onMouseLeave={handleStopHover}
+            className={`relative flex h-[12vh] w-[25rem] items-center justify-center`}
+          >
+            <SpotifyLogo opacity={`${isHovered ? "hovered" : ""}`} />
+            <SpotifyPlaylist opacity={`${isHovered ? "hovered" : ""}`} />
           </div>
         </div>
         <div className={`flex cursor-pointer justify-end space-x-10`}>

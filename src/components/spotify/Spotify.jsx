@@ -8,6 +8,7 @@ export default function SpotifyPlaylist() {
       frameBorder="0"
       allowfullscreen=""
       allow="autoplay"
+      loading="lazy"
     ></iframe>
   );
 }

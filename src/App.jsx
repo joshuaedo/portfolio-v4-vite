@@ -16,7 +16,7 @@ export function App() {
   {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 4900);
   }
 
   return (

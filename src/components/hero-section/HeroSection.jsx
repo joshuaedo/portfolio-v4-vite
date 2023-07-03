@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
-import SpotifyPlaylist from "../spotify/Spotify.jsx";
+import { useState, useEffect } from "react";
+import { HeroSpotifyPlaylist } from "../spotify/Spotify.jsx";
 
 export default function HeroSection() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <>
       <div className="text-soft header-text mt-16 md:text-9xl">
@@ -25,8 +34,12 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <div className="mt-16 flex h-[12vh] w-full items-center justify-center md:hidden">
-        <SpotifyPlaylist />
+      <div
+        className={` ${
+          loading ? "opacity-0" : "opacity-100"
+        } mt-16 flex h-[12vh] w-full items-center justify-center md:hidden`}
+      >
+        <HeroSpotifyPlaylist />
       </div>
     </>
   );

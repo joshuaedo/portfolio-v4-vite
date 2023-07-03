@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { HomeLoader } from "./components/loader/Loading.jsx";
-import LenisScroller from "./components/smooth-scroll/LenisScroller.jsx";
+// import LenisScroller from "./components/smooth-scroll/LenisScroller.jsx";
+import LocomotiveScroll from "./components/smooth-scroll/LocomotiveScroll.jsx";
 import Cursor from "./components/cursor/Cursor.jsx";
 import { Router } from "./components/router/Router.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -28,14 +29,17 @@ export function App() {
           </>
         ) : (
           <>
-            <ScrollToTop>
-              <Navbar />
-              <MobileNavbar />
-              <Cursor />
-              <LenisScroller />
-              <Router />
-              <Footer />
-            </ScrollToTop>
+            {/* <LenisScroller> */}
+            <LocomotiveScroll>
+              <ScrollToTop>
+                <Navbar />
+                <MobileNavbar />
+                <Cursor />
+                <Router />
+                <Footer />
+              </ScrollToTop>
+            </LocomotiveScroll>
+            {/* </LenisScroller> */}
           </>
         )}
       </div>

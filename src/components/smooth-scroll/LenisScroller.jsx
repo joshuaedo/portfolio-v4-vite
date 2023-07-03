@@ -1,7 +1,7 @@
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
-export default function LenisScroller() {
+export default function LenisScroller(props) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -24,5 +24,5 @@ export default function LenisScroller() {
     };
   }, []);
 
-  return <></>;
+  return <>{props.children}</>;
 }

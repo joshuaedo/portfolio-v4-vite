@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Image from "../image/Image.jsx";
 
 export default function ProjectsCard({ i, name, slug }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,8 +18,9 @@ export default function ProjectsCard({ i, name, slug }) {
           onMouseLeave={handleHover}
         >
           <div className="relative">
-            <img
-              src={`/images/home/${name}/${i}.jpg`}
+            <Image
+              webpSrc={`/images/webp/home/${name}/${i}.webp`}
+              orgSrc={`/images/original/home/${name}/${i}.jpg`}
               height={1000}
               width={1000}
               alt={name}
@@ -29,8 +31,9 @@ export default function ProjectsCard({ i, name, slug }) {
                 isHovered ? "opacity-50" : "opacity-0"
               }`}
             >
-              <img
-                src={`/images/home/${name}/1.jpg`}
+              <Image
+                webpSrc={`/images/webp/home/${name}/1.webp`}
+                orgSrc={`/images/original/home/${name}/1.jpg`}
                 height={1000}
                 width={1000}
                 alt={name}

@@ -1,6 +1,6 @@
 export default function Image({
   webpSrc,
-  pngSrc,
+  orgSrc,
   alt,
   height,
   width,
@@ -8,14 +8,14 @@ export default function Image({
 }) {
   return (
     <picture>
-      <source type="image/webp" src={webpSrc} />
-      <source type="image/png" src={pngSrc} />
+      <source type="image/webp" srcSet={webpSrc} />
+      <source type="image/png" srcSet={orgSrc} />
       <img
         loading="lazy"
         height={height}
         width={width}
         className={className}
-        src={pngSrc}
+        src={orgSrc}
         alt={alt}
         decoding="async"
       />

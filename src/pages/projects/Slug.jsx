@@ -1,6 +1,7 @@
 import { projects } from "../../database/ProjectData.jsx";
 import { useParams, Link } from "react-router-dom";
 import styles from "./Projects.module.css";
+import Image from "../../components/image/Image.jsx";
 
 export function Slug() {
   const { slug } = useParams();
@@ -17,11 +18,12 @@ export function Slug() {
 
           <section className="bg-black">
             <div className="flex items-center justify-center">
-              <img
+              <Image
                 width={1366}
                 height={768}
                 alt={project[0]?.title}
-                src={`/images/projects/${project[0]?.src}`}
+                orgSrc={`/images/original/projects/${project[0]?.src}.png`}
+                webpSrc={`/images/webp/projects/${project[0]?.src}.webp`}
               />
             </div>
           </section>

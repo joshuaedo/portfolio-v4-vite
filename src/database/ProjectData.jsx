@@ -2,7 +2,7 @@
 const projects = [
   {
     title: "Spotify",
-    src: "spotify.png",
+    src: "spotify",
     slug: "spotify",
     code: "spotify",
     color: "#FFF",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Netflix",
-    src: "netflix.png",
+    src: "netflix",
     slug: "netflix",
     code: "netflix",
     color: "#EFE8D3",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: "Google",
-    src: "google.png",
+    src: "google",
     slug: "google",
     code: "google",
     color: "#706D63",
@@ -76,7 +76,7 @@ const projects = [
   //},
   {
     title: "Apple",
-    src: "apple.png",
+    src: "apple",
     slug: "apple",
     code: "apple",
     color: "#FFF",
@@ -95,7 +95,7 @@ const projects = [
   },
   {
     title: "Portfolio V3",
-    src: "portfolio-v3.png",
+    src: "portfolio-v3",
     slug: "portfolio-v3",
     code: "portfolio-v3",
     color: "#8C8C8C",
@@ -116,7 +116,7 @@ const projects = [
 
   {
     title: "Blog",
-    src: "blog.png",
+    src: "blog",
     slug: "blog",
     code: "my-blog",
     color: "#8C8C8C",
@@ -137,7 +137,7 @@ const projects = [
 
   {
     title: "Cleander",
-    src: "cleander.png",
+    src: "cleander",
     slug: "cleander",
     code: "cleander",
     color: "#FFF",
@@ -157,7 +157,7 @@ const projects = [
   },
   {
     title: "joshua-GPT",
-    src: "joshuaGPT.png",
+    src: "joshuaGPT",
     slug: "joshua-gpt",
     code: null,
     color: "#8C8C8C",
@@ -177,7 +177,7 @@ const projects = [
   },
   {
     title: "Style Your Div",
-    src: "style-your-div.png",
+    src: "style-your-div",
     slug: "style-your-div",
     code: "style-your-div",
     color: "#FFF",
@@ -197,7 +197,7 @@ const projects = [
   },
   {
     title: "Ryter",
-    src: "ryter.png",
+    src: "ryter",
     slug: "ryter",
     code: "ryter",
     color: "#EFE8D3",
@@ -217,7 +217,7 @@ const projects = [
   },
   {
     title: "Business Card",
-    src: "business-card.png",
+    src: "business-card",
     slug: "business-card",
     code: "business-card",
     color: "#8C8C8C",
@@ -237,7 +237,7 @@ const projects = [
   },
   {
     title: "Drum Kit",
-    src: "drum.png",
+    src: "drum",
     slug: "drum",
     code: "Drum-Hero",
     color: "#EFE8D3",
@@ -257,7 +257,7 @@ const projects = [
   },
   {
     title: "Dice Game",
-    src: "dice.png",
+    src: "dice",
     slug: "dice",
     code: "Dice-Game",
     color: "#706D63",
@@ -278,7 +278,7 @@ const projects = [
   },
   {
     title: "Portfolio V2",
-    src: "portfolio-v2.png",
+    src: "portfolio-v2",
     slug: "portfolio-v2",
     code: "portfolio-V2",
     color: "#EFE8D3",
@@ -298,7 +298,7 @@ const projects = [
   },
   {
     title: "Portfolio V1",
-    src: "portfolio-v1.png",
+    src: "portfolio-v1",
     slug: "portfolio-v1",
     code: "portfolio-V1",
     color: "#706D63",

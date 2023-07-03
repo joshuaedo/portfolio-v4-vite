@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import styles from "./Modal.module.css";
+import Image from "../../../../components/image/Image.jsx";
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -103,8 +104,9 @@ export default function Modal({ modal, projects }) {
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <img
-                  src={`/images/projects/${src}`}
+                <Image
+                  webpSrc={`/images/webp/projects/${src}.webp`}
+                  orgSrc={`/images/original/projects/${src}.png`}
                   width={300}
                   height={0}
                   alt="image"

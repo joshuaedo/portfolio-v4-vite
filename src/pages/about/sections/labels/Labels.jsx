@@ -51,7 +51,14 @@ export default function Labels() {
               manageMouseMove(e);
             }}
           >
-            <img ref={img} className={styles.img} src="/images/=).png" />
+            <img
+              ref={img}
+              className={styles.img}
+              src="/images/original/=).png"
+              height={1080}
+              width={1080}
+              alt="=)"
+            />
           </div>
         </div>
       </div>

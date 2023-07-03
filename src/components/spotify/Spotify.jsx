@@ -6,7 +6,7 @@ export default function SpotifyPlaylist({ opacity }) {
       className={`spotify-playlist rounded bg-none ${opacity}`}
       height="100%"
       frameBorder="0"
-      allowfullscreen=""
+      allowFullScreen=""
       allow="autoplay"
       loading="lazy"
     ></iframe>
@@ -21,7 +21,7 @@ export function HeroSpotifyPlaylist() {
       className={`rounded bg-none`}
       height="100%"
       frameBorder="0"
-      allowfullscreen=""
+      allowFullScreen=""
       allow="autoplay"
     ></iframe>
   );

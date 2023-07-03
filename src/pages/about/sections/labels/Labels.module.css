@@ -22,3 +22,85 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+.avatar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  position: absolute;
+  -webkit-animation: moveX 4s linear 0s infinite alternate,
+    moveY 6.4s linear 0s infinite alternate;
+  -moz-animation: moveX 4s linear 0s infinite alternate,
+    moveY 6.4s linear 0s infinite alternate;
+  -o-animation: moveX 4s linear 0s infinite alternate,
+    moveY 6.4s linear 0s infinite alternate;
+  animation: moveX 4s linear 0s infinite alternate,
+    moveY 6.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 74vw;
+  }
+}
+@-moz-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 74vw;
+  }
+}
+@-o-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 74vw;
+  }
+}
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 74vw;
+  }
+}
+
+@-webkit-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 25vh;
+  }
+}
+@-moz-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 25vh;
+  }
+}
+@-o-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 25vh;
+  }
+}
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 33vh;
+  }
+}

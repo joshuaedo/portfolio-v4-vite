@@ -1,28 +1,33 @@
 import Labels from "./sections/labels/Labels.jsx";
+import { MobileLabels } from "./sections/labels/Labels.jsx";
+import { MobileLikes } from "./sections/likes/Likes.jsx";
+import { MobileSkills } from "./sections/skills/Skills.jsx";
+import { MobileServices } from "./sections/services/Services.jsx";
 import Skills from "./sections/skills/Skills.jsx";
 import Likes from "./sections/likes/Likes.jsx";
 import Services from "./sections/services/Services.jsx";
-
+import AboutHero from "./sections/aboutHero/AboutHero.jsx";
 export function About() {
   return (
     <div className="container-padding">
-      <section className="section-padding relative text-xs">
-        who is joshua edo?
-        <div className="absolute top-40">↓</div>
-        <div className="absolute top-60">↓</div>
-        <div className="absolute top-80">↓</div>
+      <section className="lg:section-padding mb-24 text-center text-xs lg:text-start">
+        <AboutHero />
       </section>
-      <section className="section-padding mb-[78vh]">
+      <section className="lg:section-padding mb-24 lg:mb-[88vh]">
         <Labels />
+        <MobileLabels />
       </section>
-      <section className="section-padding mb-[58vh]">
+      <section className="lg:section-padding mb-24 lg:mb-[58vh]">
         <Skills />
+        <MobileSkills />
       </section>
-      <section className="section-padding mb-[58vh]">
+      <section className="lg:section-padding mb-24 lg:mb-[38vh]">
         <Likes />
+        <MobileLikes />
       </section>
-      <section className="section-padding mb-[18vh]">
+      <section className="lg:section-padding">
         <Services />
+        <MobileServices />
       </section>
     </div>
   );

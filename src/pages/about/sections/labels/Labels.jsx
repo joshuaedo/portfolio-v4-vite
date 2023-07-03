@@ -1,5 +1,6 @@
 import styles from "./Labels.module.css";
 import { useRef } from "react";
+import MobileSections from "../MobileSections.jsx";
 
 export default function Labels() {
   const container = useRef();
@@ -36,10 +37,10 @@ export default function Labels() {
   };
 
   return (
-    <div className="">
-      <div className="flex flex-col items-center justify-center">
+    <div className="hidden lg:block">
+      <div className="hidden flex-col items-center justify-center lg:flex">
         <div
-          className={`${styles.container} h-[45vh] w-[70vw] cursor-pointer rounded-lg bg-purple-500 text-black shadow-2xl shadow-purple-500/20 md:h-[70vh] md:w-[70vw]`}
+          className={`${styles.container} h-[70vh] w-[70vw] cursor-pointer rounded-2xl bg-purple-500 text-black shadow-2xl shadow-purple-500/20`}
         >
           <span className="absolute bottom-5 left-5 font-medium text-black">
             labels↓
@@ -72,5 +73,19 @@ export default function Labels() {
         </ul>
       </div>
     </div>
+  );
+}
+
+export function MobileLabels() {
+  return (
+    <MobileSections color="purple" className="relative">
+      <img
+        className={styles.avatar}
+        src="/images/original/=).png"
+        height={1080}
+        width={1080}
+        alt="=)"
+      />
+    </MobileSections>
   );
 }

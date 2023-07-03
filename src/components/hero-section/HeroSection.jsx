@@ -8,16 +8,16 @@ export default function HeroSection() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3900);
   }, []);
 
   return (
     <>
-      <div className="text-soft header-text mt-16 md:text-9xl">
+      <div className="text-soft header-text mt-16 lg:text-9xl">
         <div className="flex justify-center md:justify-start">
           <p className="">SOFTWARE</p>
         </div>
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center lg:justify-end">
           <p className="">DEVELOPER</p>
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function HeroSection() {
         </span>
       </div>
 
-      <div className="mt-16 hidden justify-end md:flex">
+      <div className="mt-16 hidden justify-end lg:flex">
         <Link to="mailto:joshua.edo01@gmail.com">
           <span className="title-text link">AVAILABLE FOR HIRE ↗</span>{" "}
         </Link>

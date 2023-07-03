@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import SpotifyPlaylist from "../spotify/Spotify.jsx";
 import { SpotifyLogo } from "../spotify/Spotify.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleHover = () => {
     setIsHovered(true);
@@ -14,11 +15,17 @@ export default function Navbar() {
     setIsHovered(false);
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3900);
+  }, []);
+
   return (
     <>
       <nav
         id="scroller"
-        className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg md:flex`}
+        className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg lg:flex`}
       >
         <div className="flex">
           <div
@@ -29,7 +36,10 @@ export default function Navbar() {
           <div
             onMouseEnter={handleHover}
             onMouseLeave={handleStopHover}
-            className={`relative flex h-[12vh] w-[25rem] items-center justify-center`}
+            className={`{
+          ${
+            loading ? "opacity-0" : "opacity-100"
+          } relative flex h-[12vh] w-[25rem] items-center justify-center`}
           >
             <SpotifyLogo opacity={`${isHovered ? "hovered" : ""}`} />
             <SpotifyPlaylist opacity={`${isHovered ? "hovered" : ""}`} />

@@ -7,7 +7,7 @@ export default function LocomotiveScroll(props) {
       const locomotiveScroll = new LocomotiveScroll();
 
       function locomotiveHeightBug() {
-        locomotiveScroll.update();
+        locomotiveScroll.start();
       }
       setInterval(locomotiveHeightBug, 3500);
     })();

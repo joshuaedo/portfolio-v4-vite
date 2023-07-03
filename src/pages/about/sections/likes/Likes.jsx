@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MobileSections from "../MobileSections.jsx";
 
 export default function Likes() {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +12,7 @@ export default function Likes() {
   };
 
   return (
-    <div className="">
+    <div className="hidden lg:block">
       <div className="flex items-center justify-between">
         <div
           onMouseOver={handleMouseOver}
@@ -28,7 +29,6 @@ export default function Likes() {
           >
             <source src="/videos/likes.mp4" type="video/mp4" />
           </video>
-
           <p
             className={`title-text absolute right-5 top-5 text-xs ${
               isHovered ? "opacity-0" : "opacity-100"
@@ -50,5 +50,20 @@ export default function Likes() {
         </div>
       </div>
     </div>
+  );
+}
+
+export function MobileLikes() {
+  return (
+    <MobileSections color="blue">
+      <video
+        autoPlay
+        muted
+        loop
+        className={`h-full w-full rounded-lg object-cover`}
+      >
+        <source src="/videos/likes.mp4" type="video/mp4" />
+      </video>
+    </MobileSections>
   );
 }

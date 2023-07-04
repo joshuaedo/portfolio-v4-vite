@@ -20,7 +20,7 @@ export default function MobileNavbar() {
   return (
     <>
       {!isCollapsed ? (
-        <div className="sticky top-0 z-10 flex h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-4 text-lg md:hidden">
+        <div className="static flex h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-4 text-lg md:hidden">
           <div className="inline cursor-pointer font-medium">
             <Link to="/">Joshua Edo</Link>
           </div>
@@ -29,12 +29,12 @@ export default function MobileNavbar() {
               className="inline cursor-pointer font-medium"
               onClick={openNavPage}
             >
-              MENU+
+              +
             </div>
           </div>
         </div>
       ) : (
-        <div className="sticky top-0 z-10 h-screen w-full bg-[#A3A3A3] p-4 text-black md:hidden ">
+        <div className="static h-screen w-full bg-[#A3A3A3] p-4 text-black md:hidden ">
           <div className="mobile-nav__header flex h-[12vh] w-full items-center justify-between text-lg">
             <div className="inline cursor-pointer font-medium">
               <Link to="/">Joshua Edo</Link>

@@ -25,7 +25,7 @@ export default function Navbar() {
     <>
       <nav
         id="scroller"
-        className={`sticky top-0 z-10 hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg lg:flex`}
+        className={`static hidden h-[12vh] w-full items-center justify-between bg-black bg-opacity-50 p-7 text-lg lg:flex`}
       >
         <div className="flex">
           <div

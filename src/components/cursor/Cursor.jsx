@@ -25,7 +25,7 @@ const Cursor = () => {
           outerScale={0.5}
           outerAlpha={0}
           outerStyle={{
-            backgroundColor: "purple",
+            backgroundColor: "#a855f7",
           }}
           innerStyle={{
             display: "none",

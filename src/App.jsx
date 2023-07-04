@@ -6,9 +6,10 @@ import LocomotiveScroll from "./components/smooth-scroll/LocomotiveScroll.jsx";
 import Cursor from "./components/cursor/Cursor.jsx";
 import { Router } from "./components/router/Router.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
-import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
+// import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import { ScrollToTop } from "./components/smooth-scroll/ScrollToTop.jsx";
+import Header from "./components/header";
 
 export function App() {
   const [loading, setLoading] = useState(true);
@@ -31,8 +32,9 @@ export function App() {
             {/* <LenisScroller> */}
             <LocomotiveScroll>
               <ScrollToTop>
+                <Header />
                 <Navbar />
-                <MobileNavbar />
+                {/* <MobileNavbar /> */}
                 <Cursor />
                 <Router />
                 <Footer />

@@ -57,7 +57,9 @@ export function MobileServices() {
       {isHovered ? (
         <div className="flex h-full w-full items-center justify-center text-center">
           <div className="max-w-[70%]">
-            <div className="header-text text-black">HAVE AN IDEA?</div>
+            <div className="header-text text-black md:text-5xl">
+              HAVE AN IDEA?
+            </div>
             <a href="mailto:joshua.edo01@gmail.com">
               <p className="title-text link mt-2 text-black decoration-black ">
                 Get In Touch ↗

@@ -56,10 +56,10 @@ export default function Navbar() {
               <p className="text-2xs">MY PROJECTS</p>
             </Link>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="relative flex w-[8vw] items-center justify-center">
             <Link
               to="mailto:joshua.edo01@gmail.com"
-              className="link title-text"
+              className="link title-text absolute z-[6]"
             >
               Let&apos;s Talk →
             </Link>

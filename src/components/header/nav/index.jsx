@@ -33,8 +33,7 @@ export default function Index() {
   }
 
   const pathname = usePathname();
-  const [selectedIndicator, setSelectedIndicator] =
-    useState(pathname);
+  const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
     <motion.div
@@ -45,6 +44,9 @@ export default function Index() {
       className={styles.menu}
     >
       <div className={styles.body}>
+        {/* <div className="flex h-[12vh] w-full">
+          <div className="inline cursor-pointer font-medium">Joshua Edo</div>
+        </div> */}
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);

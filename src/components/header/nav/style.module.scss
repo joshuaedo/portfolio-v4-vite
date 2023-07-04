@@ -30,3 +30,14 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .menu {
+    width: 100vw;
+    .body {
+      height: 100%;
+      padding: 50px;
+      padding-top: 100px;
+    }
+  }
+}

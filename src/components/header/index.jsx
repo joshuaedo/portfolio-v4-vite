@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styles from "./style.module.scss";
 import { useEffect, useState } from "react";
 import Nav from "./nav";
@@ -28,7 +29,7 @@ export default function Home() {
 
   useEffect(() => {
     if (isActive) setIsActive(false);
-  }, [pathname, isActive]);
+  }, [pathname]);
 
   return (
     <>
@@ -39,8 +40,8 @@ export default function Home() {
               setIsActive(!isActive);
             }}
             className={`${styles.button} ${
-              show ? "flex" : "hidden"
-            } transition ease-in`}
+              show ? "scale-100" : "scale-0"
+            } transition ease-in-out`}
           >
             <div
               className={`${styles.burger} ${

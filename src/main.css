@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 350px) {
+  .time {
+    display: inline;
+  }
+}
+
 .text-soft {
   font-size: 3.45rem;
   line-height: 1;

@@ -74,7 +74,7 @@ export default function Footer() {
             className={`title-text flex h-10 items-center justify-between text-center`}
           >
             <p>{date}</p>
-            <p className="">{currentTime}</p> <p>{wish}</p>
+            <p className="hidden time">{currentTime}</p> <p>{wish}</p>
           </div>
         </div>
       </footer>

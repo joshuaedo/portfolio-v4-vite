@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MobileSections from "../MobileSections.jsx";
+import { MobileCover } from "../MobileSections.jsx";
 
 export default function Skills() {
   const [isHovered, setIsHovered] = useState(false);
@@ -53,16 +54,42 @@ export default function Skills() {
 }
 
 export function MobileSkills() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <MobileSections color="green">
-      <video
-        autoPlay
-        muted
-        loop
-        className={`h-full w-full rounded-lg object-cover`}
-      >
-        <source src="/videos/skills-2.mp4" type="video/mp4" />
-      </video>
+    <MobileSections
+      color="green"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleMouseOver}
+      className="relative"
+    >
+      {isHovered ? (
+        <video
+          autoPlay
+          muted
+          loop
+          className={`h-full w-full rounded-lg object-cover`}
+        >
+          <source src="/videos/skills-2.mp4" type="video/mp4" />
+        </video>
+      ) : (
+        <>
+          <span className="absolute right-5 top-5 text-3xs">hover ?</span>
+          <MobileCover
+            title="Skills"
+            items="javascript • nextjs & reactjs • tailwind & css • attention to
+                detail • fifa"
+          />
+        </>
+      )}
     </MobileSections>
   );
 }

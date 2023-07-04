@@ -1,6 +1,7 @@
 import styles from "./Labels.module.css";
 import { useRef } from "react";
 import MobileSections from "../MobileSections.jsx";
+import { MobileCover } from "../MobileSections.jsx";
 
 export default function Labels() {
   const container = useRef();
@@ -85,6 +86,11 @@ export function MobileLabels() {
         height={1080}
         width={1080}
         alt="=)"
+      />
+
+      <MobileCover
+        title="Labels"
+        items="22 • he/him • designer • engineer • developer"
       />
     </MobileSections>
   );

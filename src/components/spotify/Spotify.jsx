@@ -1,3 +1,5 @@
+import "./Spotify.css";
+
 export default function SpotifyPlaylist({ opacity }) {
   return (
     <iframe

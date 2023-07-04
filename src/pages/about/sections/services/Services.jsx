@@ -1,4 +1,6 @@
+import { useState } from "react";
 import MobileSections from "../MobileSections.jsx";
+import { MobileCover } from "../MobileSections.jsx";
 
 export default function Services() {
   return (
@@ -37,18 +39,39 @@ export default function Services() {
 }
 
 export function MobileServices() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <MobileSections color="yellow">
-      <div className="flex h-full w-full items-center justify-center text-center">
-        <div className="max-w-[70%]">
-          <div className="header-text text-black">HAVE AN IDEA?</div>
-          <a href="mailto:joshua.edo01@gmail.com">
-            <p className="title-text link mt-2 text-black decoration-black ">
-              Get In Touch ↗
-            </p>
-          </a>
+    <MobileSections
+      color="yellow"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleMouseOver}
+    >
+      {isHovered ? (
+        <div className="flex h-full w-full items-center justify-center text-center">
+          <div className="max-w-[70%]">
+            <div className="header-text text-black">HAVE AN IDEA?</div>
+            <a href="mailto:joshua.edo01@gmail.com">
+              <p className="title-text link mt-2 text-black decoration-black ">
+                Get In Touch ↗
+              </p>
+            </a>
+          </div>
         </div>
-      </div>
+      ) : (
+        <MobileCover
+          title="Services"
+          items="blogs • portfolios • entertainment websites • e-commerce websites • custom websites"
+        />
+      )}
     </MobileSections>
   );
 }

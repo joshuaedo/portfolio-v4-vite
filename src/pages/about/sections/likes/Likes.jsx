@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MobileSections from "../MobileSections.jsx";
+import { MobileCover } from "../MobileSections.jsx";
 
 export default function Likes() {
   const [isHovered, setIsHovered] = useState(false);
@@ -54,16 +55,37 @@ export default function Likes() {
 }
 
 export function MobileLikes() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <MobileSections color="blue">
-      <video
-        autoPlay
-        muted
-        loop
-        className={`h-full w-full rounded-lg object-cover`}
-      >
-        <source src="/videos/likes.mp4" type="video/mp4" />
-      </video>
+    <MobileSections
+      color="blue"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleMouseOver}
+    >
+      {isHovered ? (
+        <video
+          autoPlay
+          muted
+          loop
+          className={`h-full w-full rounded-lg object-cover`}
+        >
+          <source src="/videos/likes.mp4" type="video/mp4" />
+        </video>
+      ) : (
+        <MobileCover
+          title="Stuff I Like"
+          items="chess • pizza • chelsea • how i met your mother • dan brown"
+        />
+      )}
     </MobileSections>
   );
 }

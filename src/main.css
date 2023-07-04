@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.spotify-logo {
-  transition: transform 0.5s ease;
-}
-
-.spotify-playlist {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 0;
-  transform: translateY(-200%);
-}
-
-.spotify-logo.hovered {
-  transform: translateY(-200%);
-}
-
-.spotify-playlist.hovered {
-  opacity: 1;
-  transform: translateY(0%);
-}
-
 .text-soft {
   font-size: 3.45rem;
   line-height: 1;

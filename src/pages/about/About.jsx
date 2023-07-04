@@ -25,7 +25,7 @@ export function About() {
         <Likes />
         <MobileLikes />
       </section>
-      <section className="lg:section-padding">
+      <section className="lg:section-padding mb-24">
         <Services />
         <MobileServices />
       </section>

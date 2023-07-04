@@ -68,7 +68,6 @@ export function MobileSkills() {
       color="green"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      className="relative"
     >
       {isHovered ? (
         <video
@@ -81,7 +80,9 @@ export function MobileSkills() {
         </video>
       ) : (
         <>
-          <span className="absolute right-5 top-5 text-3xs">hover ?</span>
+          <span className="absolute right-5 top-5 text-3xs">
+            definitely don&lsquo;t click me
+          </span>
           <MobileCover
             title="Skills"
             items="javascript • nextjs & reactjs • tailwind & css • attention to

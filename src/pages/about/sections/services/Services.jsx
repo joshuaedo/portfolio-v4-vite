@@ -68,10 +68,13 @@ export function MobileServices() {
           </div>
         </div>
       ) : (
-        <MobileCover
-          title="Services"
-          items="blogs • portfolios • entertainment websites • e-commerce websites • custom websites"
-        />
+        <>
+          <span className="absolute right-5 top-5 text-3xs">please :/</span>
+          <MobileCover
+            title="Services"
+            items="blogs • portfolios • entertainment websites • e-commerce websites • custom websites"
+          />
+        </>
       )}
     </MobileSections>
   );

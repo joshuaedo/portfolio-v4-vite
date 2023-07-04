@@ -80,10 +80,13 @@ export function MobileLikes() {
           <source src="/videos/likes.mp4" type="video/mp4" />
         </video>
       ) : (
-        <MobileCover
-          title="Stuff I Like"
-          items="chess • pizza • chelsea • how i met your mother • dan brown"
-        />
+        <>
+          <span className="absolute right-5 top-5 text-3xs">maybe?</span>
+          <MobileCover
+            title="Stuff I Like"
+            items="chess • pizza • chelsea • how i met your mother • dan brown"
+          />
+        </>
       )}
     </MobileSections>
   );

@@ -69,7 +69,6 @@ export function MobileLikes() {
       color="blue"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      onClick={handleMouseOver}
     >
       {isHovered ? (
         <video

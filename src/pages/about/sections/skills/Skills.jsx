@@ -68,7 +68,6 @@ export function MobileSkills() {
       color="green"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      onClick={handleMouseOver}
       className="relative"
     >
       {isHovered ? (

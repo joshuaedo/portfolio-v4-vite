@@ -53,7 +53,6 @@ export function MobileServices() {
       color="yellow"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      onClick={handleMouseOver}
     >
       {isHovered ? (
         <div className="flex h-full w-full items-center justify-center text-center">

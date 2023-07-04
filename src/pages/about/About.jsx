@@ -17,11 +17,11 @@ export function About() {
         <Labels />
         <MobileLabels />
       </section>
-      <section className="lg:section-padding mb-24 lg:mb-[58vh]">
+      <section className="xl:section-padding mb-24 lg:mb-[58vh]">
         <Skills />
         <MobileSkills />
       </section>
-      <section className="lg:section-padding mb-24 lg:mb-[38vh]">
+      <section className="xl:section-padding mb-24 lg:mb-[38vh]">
         <Likes />
         <MobileLikes />
       </section>

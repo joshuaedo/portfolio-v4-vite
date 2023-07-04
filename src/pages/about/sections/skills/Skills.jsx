@@ -13,7 +13,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="hidden items-center justify-between lg:flex">
+    <div className="hidden items-center justify-around lg:flex">
       <div>
         <p className="header-text text-white">SKILLS</p>
         <ul className="flex flex-col items-center text-xs">

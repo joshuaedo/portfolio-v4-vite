@@ -14,7 +14,7 @@ export default function Likes() {
 
   return (
     <div className="hidden lg:block">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-around">
         <div
           onMouseOver={handleMouseOver}
           onMouseLeave={handleMouseLeave}

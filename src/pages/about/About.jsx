@@ -10,7 +10,7 @@ import AboutHero from "./sections/aboutHero/AboutHero.jsx";
 export function About() {
   return (
     <div className="container-padding">
-      <section className="lg:section-padding mb-24 text-center text-xs lg:text-start">
+      <section className="lg:section-padding mb-24 mt-10 text-center text-xs lg:mt-0 lg:text-start">
         <AboutHero />
       </section>
       <section className="lg:section-padding mb-24 lg:mb-[88vh]">

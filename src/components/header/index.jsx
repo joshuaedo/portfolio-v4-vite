@@ -1,6 +1,6 @@
 /* eslint-disable */
 import styles from "./style.module.scss";
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useContext } from "react";
 import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -35,7 +35,9 @@ export default function Home() {
   return (
     <>
       <div className={styles.main}>
-        <div className={styles.header}>
+        <div className={`${styles.header} ${
+            show || isActive ? "z-[20]" : "z-[6]"
+          }`}>
           <div
             onClick={() => {
               setIsActive(!isActive);
@@ -47,7 +49,7 @@ export default function Home() {
             <div
               className={`${styles.burger} ${
                 isActive ? styles.burgerActive : ""
-              }`}
+              } `}
             ></div>
           </div>
         </div>

@@ -1,7 +1,14 @@
-.footer{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 12px;
-    gap: 40px;
+.footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  font-size: 12px;
+  gap: 40px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    margin-top: 0;
+  }
 }

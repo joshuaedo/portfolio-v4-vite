@@ -50,3 +50,32 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 29px;
+    .button {
+      height: 50px;
+      width: 50px;
+    }
+    .burger {
+      &::after {
+        top: -4px;
+      }
+      &::before {
+        top: 4px;
+      }
+    }
+    .burgerActive {
+      &::after {
+        transform: rotate(45deg);
+        top: -0.4px;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        top: 0px;
+      }
+    }
+  }
+}

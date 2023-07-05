@@ -10,6 +10,7 @@ import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import { ScrollToTop } from "./components/smooth-scroll/ScrollToTop.jsx";
 import Header from "./components/header";
+import { HeaderProvider } from "./contexts/HeaderContext.jsx";
 
 export function App() {
   const [loading, setLoading] = useState(true);
@@ -30,16 +31,18 @@ export function App() {
         ) : (
           <>
             {/* <LenisScroller> */}
-            <LocomotiveScroll>
-              <ScrollToTop>
-                <Header />
-                <Navbar />
-                <MobileNavbar />
-                <Cursor />
-                <Router />
-                <Footer />
-              </ScrollToTop>
-            </LocomotiveScroll>
+            <HeaderProvider>
+              <LocomotiveScroll>
+                <ScrollToTop>
+                  <Header />
+                  <Navbar />
+                  <MobileNavbar />
+                  <Cursor />
+                  <Router />
+                  <Footer />
+                </ScrollToTop>
+              </LocomotiveScroll>
+            </HeaderProvider>
             {/* </LenisScroller> */}
           </>
         )}

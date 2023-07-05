@@ -1,12 +1,15 @@
 /* eslint-disable */
 import styles from "./style.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { HeaderContext } from "../../contexts/HeaderContext.jsx";
 
 export default function Home() {
   const [show, handleShow] = useState(false);
+  const { isActive, setIsActive } = useContext(HeaderContext);
+  const pathname = usePathname();
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
       handleShow(true);
@@ -14,18 +17,15 @@ export default function Home() {
       handleShow(false);
     }
   };
+  function usePathname() {
+    const location = useLocation();
+    return location.pathname;
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", transitionNavBar);
     return () => window.removeEventListener("scroll", transitionNavBar);
   }, []);
-
-  function usePathname() {
-    const location = useLocation();
-    return location.pathname;
-  }
-  const [isActive, setIsActive] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     if (isActive) setIsActive(false);

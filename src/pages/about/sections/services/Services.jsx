@@ -69,10 +69,12 @@ export function MobileServices() {
         </div>
       ) : (
         <>
-          <span className="absolute right-5 top-5 text-3xs">please :/</span>
           <MobileCover
+            h="40px"
+            w="40px"
             title="Services"
             items="blogs • portfolios • entertainment websites • e-commerce websites • custom websites"
+            src="https://media2.giphy.com/media/eTQu5MrqHgo2dF9Y3q/giphy.gif?cid=ecf05e47iw5ey5gf9ldscy3899vhk5twbfig3hj7yhshjqvu&ep=v1_stickers_search&rid=giphy.gif&ct=s"
           />
         </>
       )}

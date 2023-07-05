@@ -1,3 +1,5 @@
+import Image from "./../../../components/image/Image.jsx";
+
 export default function MobileSections({
   color,
   className,
@@ -23,9 +25,18 @@ export default function MobileSections({
   );
 }
 
-export function MobileCover({ title, items }) {
+export function MobileCover({ title, items, src, h, w }) {
   return (
     <div className="relative flex h-full w-full items-end p-5">
+      <div className="absolute right-5 top-5 text-3xs">
+        <Image
+          orgSrc={src}
+          alt="click icon"
+          height={h}
+          width={w}
+          className=""
+        />
+      </div>
       <div>
         <p className="title-text pb-2 text-2xl">{title}</p>
         <ul className="line-height text-3xs font-medium uppercase">

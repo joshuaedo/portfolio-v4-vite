@@ -89,6 +89,9 @@ export function MobileLabels() {
       />
 
       <MobileCover
+        src="https://media4.giphy.com/media/hiJ9ypGI5tIKdwKoK2/giphy.gif?cid=ecf05e47i97fjedctpe4mfxg8ziz4sf595i18tt6t5t6qsqv&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+        h="80px"
+        w="80px"
         title="Labels"
         items="22 • he/him • designer • engineer • developer"
       />

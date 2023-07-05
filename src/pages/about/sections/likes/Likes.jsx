@@ -24,19 +24,19 @@ export default function Likes() {
             autoPlay
             muted
             loop
-            className={`h-full w-full rounded-lg object-cover ${
+            className={`h-full w-full rounded-lg object-cover transition ease-in-out ${
               isHovered ? "opacity-100" : "opacity-0"
             }`}
           >
             <source src="/videos/likes.mp4" type="video/mp4" />
           </video>
-          <p
-            className={`title-text absolute right-5 top-5 text-xs ${
+          <div
+            className={`title-text absolute right-5 top-5 text-xs transition ease-in-out ${
               isHovered ? "opacity-0" : "opacity-100"
             }`}
           >
             hover?
-          </p>
+          </div>
         </div>
         <div>
           <p className="header-text text-7xl text-white">STUFF I LIKE</p>
@@ -81,10 +81,12 @@ export function MobileLikes() {
         </video>
       ) : (
         <>
-          <span className="absolute right-5 top-5 text-3xs">maybe?</span>
           <MobileCover
+            h="15px"
+            w="15px"
             title="Stuff I Like"
             items="chess • pizza • chelsea • how i met your mother • dan brown"
+            src="https://media4.giphy.com/media/n9nTs7W2sDc0WdQ8wR/giphy.gif?cid=ecf05e47iw5ey5gf9ldscy3899vhk5twbfig3hj7yhshjqvu&ep=v1_stickers_search&rid=giphy.gif&ct=sf"
           />
         </>
       )}

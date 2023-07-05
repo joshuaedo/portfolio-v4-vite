@@ -80,10 +80,10 @@ export function MobileSkills() {
         </video>
       ) : (
         <>
-          <span className="absolute right-5 top-5 text-3xs">
-            definitely don&lsquo;t click me
-          </span>
           <MobileCover
+            h="18px"
+            w="18px"
+            src="https://media3.giphy.com/media/TibATeFWhd439Fhupc/giphy.gif?cid=ecf05e47iw5ey5gf9ldscy3899vhk5twbfig3hj7yhshjqvu&ep=v1_stickers_search&rid=giphy.gif&ct=s"
             title="Skills"
             items="javascript • nextjs & reactjs • tailwind & css • attention to
                 detail • fifa"

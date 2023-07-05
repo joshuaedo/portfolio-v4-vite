@@ -6,10 +6,15 @@ import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { HeaderContext } from "../../contexts/HeaderContext.jsx";
 
+function usePathname() {
+  const location = useLocation();
+  return location.pathname;
+}
+
 export default function Home() {
-  const [show, handleShow] = useState(false);
-  const { isActive, setIsActive } = useContext(HeaderContext);
+  const { isActive, setIsActive, show, handleShow } = useContext(HeaderContext);
   const pathname = usePathname();
+
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
       handleShow(true);
@@ -17,10 +22,6 @@ export default function Home() {
       handleShow(false);
     }
   };
-  function usePathname() {
-    const location = useLocation();
-    return location.pathname;
-  }
 
   useEffect(() => {
     window.addEventListener("scroll", transitionNavBar);

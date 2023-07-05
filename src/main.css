@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 350px) {
-  .time {
-    display: inline;
-  }
+/* text-reveal */
+.text-reveal {
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
-
-.text-soft {
-  font-size: 3.45rem;
-  line-height: 1;
+.text-reveal__container {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 1.5rem;
+}
+.text-reveal__negative {
+  transform: translateY(-115px);
+  transition: transform 0.5s;
 }
 
 /* Lenis */
@@ -32,6 +35,17 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+@media (min-width: 350px) {
+  .time {
+    display: inline;
+  }
+}
+
+.text-soft {
+  font-size: 3.45rem;
+  line-height: 1;
 }
 
 @layer components {

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 import { useState, useEffect } from "react";
 import { HeroSpotifyPlaylist } from "../spotify/Spotify.jsx";
 
@@ -6,6 +7,13 @@ export default function HeroSection() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    gsap.to(".text-reveal", {
+      y: 0,
+      stagger: 0.1,
+      delay: 0.2,
+      duration: 0.2,
+    });
+
     setTimeout(() => {
       setLoading(false);
     }, 3900);
@@ -13,17 +21,17 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="text-soft header-text mt-16 lg:text-9xl">
+      <div className="text-reveal__container text-soft header-text mt-16 md:text-7xl xl:text-9xl">
         <div className="flex justify-center md:justify-start">
-          <p className="">SOFTWARE</p>
+          <p className="text-reveal">SOFTWARE</p>
         </div>
         <div className="flex justify-center lg:justify-end">
-          <p className="">DEVELOPER</p>
+          <p className="text-reveal">DEVELOPER</p>
         </div>
       </div>
 
-      <div className="mt-3 flex justify-end">
-        <span className="title-text line-height max-w-[75%] text-end">
+      <div className="text-reveal__container mt-3 flex justify-end">
+        <span className="text-reveal text-reveal__negative title-text line-height max-w-[75%] text-end">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
       </div>
@@ -37,7 +45,7 @@ export default function HeroSection() {
       <div
         className={` ${
           loading ? "opacity-0" : "opacity-100"
-        } mt-16 flex h-[12vh] w-full items-center justify-center md:hidden`}
+        } mt-16 flex h-[14vh] w-full items-center justify-center md:hidden`}
       >
         <HeroSpotifyPlaylist />
       </div>

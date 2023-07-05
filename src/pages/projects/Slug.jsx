@@ -2,18 +2,31 @@ import { projects } from "../../database/ProjectData.jsx";
 import { useParams, Link } from "react-router-dom";
 import styles from "./Projects.module.css";
 import Image from "../../components/image/Image.jsx";
+import gsap from "gsap";
+import { useEffect } from "react";
 
 export function Slug() {
   const { slug } = useParams();
   const project = projects.filter((p) => p.slug === slug);
   console.log(project[0]);
 
+  useEffect(() => {
+    gsap.to(".text-reveal", {
+      y: 0,
+      stagger: 0.1,
+      delay: 0.2,
+      duration: 0.2,
+    });
+  }, []);
+
   return (
     <>
       <main className={`flex items-center justify-center`}>
         <div className="w-[90%]">
-          <section className="pb-[5vh] pt-[15vh] text-center md:flex md:pt-[30vh] md:text-start">
-            <h1 className="section-text uppercase">{project[0]?.title}</h1>
+          <section className="text-reveal__container pb-[5vh] pt-[15vh] text-center md:flex md:pt-[30vh] md:text-start">
+            <h1 className="section-text text-reveal uppercase">
+              {project[0]?.title}
+            </h1>
           </section>
 
           <section className="bg-black">

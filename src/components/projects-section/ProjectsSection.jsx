@@ -2,6 +2,7 @@ import ProjectsCard from "./ProjectsCard.jsx";
 import { Link } from "react-router-dom";
 
 export default function ProjectsSection() {
+  
   return (
     <>
       <div className="mt-24 text-center md:text-start">

@@ -6,7 +6,7 @@ export default function AboutHero() {
     gsap.to(".text-reveal", {
       y: 0,
       stagger: 0.1,
-      delay: 0.2,
+      delay: 0.5,
       duration: 0.2,
     });
   }, []);

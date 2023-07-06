@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SpotifyPlaylist from "../spotify/Spotify.jsx";
 import { SpotifyLogo } from "../spotify/Spotify.jsx";
 import { useState, useEffect } from "react";
+import gsap from "gsap";
 
 export default function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,6 +15,15 @@ export default function Navbar() {
   const handleStopHover = () => {
     setIsHovered(false);
   };
+
+  useEffect(() => {
+    gsap.to(".text-reveal", {
+      y: 0,
+      stagger: 0.1,
+      delay: 0.5,
+      duration: 0.2,
+    });
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -45,7 +55,9 @@ export default function Navbar() {
             <SpotifyPlaylist opacity={`${isHovered ? "hovered" : ""}`} />
           </div>
         </div>
-        <div className={`flex cursor-pointer justify-end space-x-10`}>
+        <div
+          className={`text-reveal text-reveal__negative flex cursor-pointer justify-end space-x-10`}
+        >
           <div className="flex w-[20vw] items-center justify-around ">
             <Link to="/about" className="hover:opacity-70">
               <p className="font-medium">Info</p>

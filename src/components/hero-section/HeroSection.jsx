@@ -21,8 +21,8 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="text-reveal__container text-soft header-text mt-16 md:text-7xl xl:text-9xl">
-        <div className="flex justify-center md:justify-start">
+      <div className="text-reveal__container text-soft header-text mt-16 md:text-8xl xl:text-9xl">
+        <div className="flex justify-center lg:justify-start">
           <p className="text-reveal">SOFTWARE</p>
         </div>
         <div className="flex justify-center lg:justify-end">
@@ -31,23 +31,25 @@ export default function HeroSection() {
       </div>
 
       <div className="text-reveal__container mt-3 flex justify-end">
-        <span className="text-reveal text-reveal__negative title-text line-height max-w-[75%] text-end">
+        <span className="text-reveal text-reveal__negative title-text line-height max-w-[75%] text-end md:max-w-[30%]">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
       </div>
 
-      <div className="mt-16 hidden justify-end lg:flex">
+      <div className="mt-16 hidden justify-end md:flex">
         <Link to="mailto:joshua.edo01@gmail.com">
           <span className="title-text link">AVAILABLE FOR HIRE ↗</span>{" "}
         </Link>
       </div>
 
-      <div
-        className={` ${
-          loading ? "opacity-0" : "opacity-100"
-        } mt-16 flex h-[14vh] w-full items-center justify-center md:hidden`}
-      >
-        <HeroSpotifyPlaylist />
+      <div className="flex w-full items-center justify-center">
+        <div
+          className={` ${
+            loading ? "opacity-0" : "opacity-100"
+          } mt-16 flex h-[14vh]  max-w-[20rem] items-center justify-center md:hidden`}
+        >
+          <HeroSpotifyPlaylist />
+        </div>
       </div>
     </>
   );

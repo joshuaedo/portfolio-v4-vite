@@ -9,14 +9,13 @@ export default function MobileSections({
   onClick,
 }) {
   return (
-    <div
-      onMouseOver={onMouseOver}
-      onMouseLeave={onMouseLeave}
-      onClick={onClick}
-    >
-      <div className="flex flex-col items-center justify-center lg:hidden">
+    <div>
+      <div className="flex items-center justify-center">
         <div
-          className={`${className} relative h-[34vh] w-[82vw] cursor-pointer rounded-2xl bg-${color}-500 text-black shadow-2xl shadow-${color}-500/20`}
+          onMouseOver={onMouseOver}
+          onMouseLeave={onMouseLeave}
+          onClick={onClick}
+          className={`${className} relative h-[11rem] w-[16rem] cursor-pointer rounded-2xl transition ease-in-out md:h-[15rem] md:w-[20rem] bg-${color}-500 text-black shadow-2xl shadow-${color}-500/20`}
         >
           {children}
         </div>
@@ -25,10 +24,12 @@ export default function MobileSections({
   );
 }
 
-export function MobileCover({ title, items, src, h, w }) {
+export function MobileCover({ title, items, src, h, w, className }) {
   return (
-    <div className="relative flex h-full w-full items-end p-5">
-      <div className="absolute right-5 top-5 text-3xs">
+    <div
+      className={`${className} relative flex h-full w-full items-end p-5 transition ease-in-out`}
+    >
+      <div className="absolute right-5 top-5">
         <Image
           orgSrc={src}
           alt="click icon"

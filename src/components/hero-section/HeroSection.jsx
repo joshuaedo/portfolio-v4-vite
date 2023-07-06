@@ -16,7 +16,7 @@ export default function HeroSection() {
 
     setTimeout(() => {
       setLoading(false);
-    }, 3900);
+    }, 4321);
   }, []);
 
   return (

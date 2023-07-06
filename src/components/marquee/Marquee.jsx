@@ -45,7 +45,7 @@ export default function Marquee({ text, bgColor, stagnantText }) {
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
-    xPercent += 0.2 * direction;
+    xPercent += 0.05 * direction;
   };
 
   return (

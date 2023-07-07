@@ -65,9 +65,9 @@ html.lenis {
   line-height: 1;
 }
 
-@media (min-width: 30px) {
+@media (max-width: 320px) {
   .header-text {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 }
 

@@ -30,7 +30,7 @@ export default function MobileNavbar() {
         <div
           className={`absolute right-2 top-1/2 ${
             show || isActive ? "hidden" : "inline"
-          } pointer-events-none z-10 -translate-y-1/2 transform cursor-pointer font-medium`}
+          } z-10 -translate-y-1/2 transform cursor-pointer font-medium`}
           onClick={handleClick}
         >
           MENU+

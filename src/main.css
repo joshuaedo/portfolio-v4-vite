@@ -50,6 +50,12 @@ html.lenis {
   pointer-events: none;
 }
 
+@media (max-width: 425px) {
+  .hero-spotify {
+    width: 90%;
+  }
+}
+
 @media (min-width: 350px) {
   .time {
     display: inline;

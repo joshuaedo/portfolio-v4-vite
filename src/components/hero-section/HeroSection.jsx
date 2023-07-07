@@ -46,7 +46,7 @@ export default function HeroSection() {
         <div
           className={` ${
             loading ? "opacity-0" : "opacity-100"
-          } mt-16 flex h-[14vh]  max-w-[25rem] items-center justify-center md:hidden`}
+          } mt-16 flex h-[14vh] hero-spotify items-center justify-center md:hidden`}
         >
           <HeroSpotifyPlaylist />
         </div>

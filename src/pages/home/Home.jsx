@@ -6,7 +6,7 @@ export function Home() {
   return (
     <>
       <div className="container-padding home">
-        <div className="section-padding">
+        <div className="section-padding pb-12 md:pb-0">
           <section className="relative">
             <HeroSection />
           </section>

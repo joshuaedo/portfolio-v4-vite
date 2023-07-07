@@ -11,7 +11,7 @@ export default function MobileNavbar() {
   };
 
   return (
-    <div className="text-reveal__fade-in static flex h-[12vh] items-center justify-between bg-black bg-opacity-50 p-4 text-lg md:hidden">
+    <div className="text-reveal__fade-in static flex h-[12vh] items-center justify-between bg-black bg-opacity-50 p-4 text-lg xl:hidden">
       <div className="inline cursor-pointer font-medium">
         <Link to="/">Joshua Edo</Link>
       </div>

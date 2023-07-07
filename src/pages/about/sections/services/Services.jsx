@@ -24,7 +24,7 @@ export function MobileServices() {
         }`}
       >
         <div className="max-w-[70%]">
-          <div className="header-text text-4xl text-black">HAVE AN IDEA?</div>
+          <div className="section-text text-4xl text-black">HAVE AN IDEA?</div>
           <a href="mailto:joshua.edo01@gmail.com">
             <p className="title-text link mt-2 text-black decoration-black ">
               Get In Touch ↗

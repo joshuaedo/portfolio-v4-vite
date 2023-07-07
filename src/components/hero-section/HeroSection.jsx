@@ -15,7 +15,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="text-reveal__container text-soft header-text mt-16 md:text-9xl">
+      <div className="text-reveal__container header-text mt-16 ">
         <div className="flex justify-center lg:justify-start">
           <p className="text-reveal">SOFTWARE</p>
         </div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
 
       <div className="flex w-full items-center justify-center">
         <div
-          className={`hero-spotify mt-16 flex h-[14vh] items-center justify-center md:hidden`}
+          className={`hero-spotify mt-16 flex h-[14vh] items-center justify-center md:mb-32 md:hidden`}
         >
           <HeroSpotifyPlaylist />
         </div>

@@ -58,9 +58,35 @@ html.lenis {
   }
 }
 
-.text-soft {
-  font-size: 3.45rem;
+.header-text {
+  color: #a3a3a3;
+  font-weight: 500;
+  font-size: 3rem;
   line-height: 1;
+}
+
+@media (min-width: 600px) {
+  .header-text {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-text {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-text {
+    font-size: 7.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-text {
+    font-size: 8.3rem;
+  }
 }
 
 @layer components {
@@ -73,11 +99,7 @@ html.lenis {
   }
 
   .section-padding {
-    @apply min-h-[58vh] md:min-h-[88vh] lg:px-52;
-  }
-
-  .header-text {
-    @apply text-5xl font-medium text-[#A3A3A3] md:text-9xl;
+    @apply min-h-[58vh] md:min-h-[88vh] md:px-12 lg:px-32 xl:px-52;
   }
 
   .section-text {

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./Spotify.css";
 
 export default function SpotifyPlaylist({ opacity }) {
@@ -8,6 +9,7 @@ export default function SpotifyPlaylist({ opacity }) {
       className={`spotify-playlist rounded bg-none ${opacity}`}
       height="100%"
       frameBorder="0"
+      allowTransparency={true}
       allowFullScreen=""
       allow="autoplay"
       loading="lazy"
@@ -25,6 +27,7 @@ export function HeroSpotifyPlaylist() {
       frameBorder="0"
       allowFullScreen=""
       allow="autoplay"
+      allowTransparency={true}
     ></iframe>
   );
 }

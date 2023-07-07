@@ -21,7 +21,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="text-reveal__container text-soft header-text mt-16 md:text-8xl xl:text-9xl">
+      <div className="text-reveal__container text-soft header-text mt-16 md:text-9xl">
         <div className="flex justify-center lg:justify-start">
           <p className="text-reveal">SOFTWARE</p>
         </div>
@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       <div className="text-reveal__container mt-3 flex justify-end">
-        <span className="text-reveal text-reveal__negative title-text line-height max-w-[75%] text-end md:max-w-[30%]">
+        <span className="text-reveal text-reveal__negative title-text line-height max-w-[70%] text-end md:max-w-[30%]">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
       </div>
@@ -46,7 +46,7 @@ export default function HeroSection() {
         <div
           className={` ${
             loading ? "opacity-0" : "opacity-100"
-          } mt-16 flex h-[14vh]  max-w-[20rem] items-center justify-center md:hidden`}
+          } mt-16 flex h-[14vh]  max-w-[25rem] items-center justify-center md:hidden`}
         >
           <HeroSpotifyPlaylist />
         </div>

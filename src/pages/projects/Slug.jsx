@@ -41,15 +41,19 @@ export function Slug() {
             </div>
           </section>
 
-          <section className="justify-between bg-black py-10 text-lg md:flex md:py-20">
+          <section className="text-reveal__fade-in justify-between bg-black py-10 text-lg md:flex md:py-20">
             <div className="w-full md:w-[45%]">
               <p className="text-2xs font-medium text-[#A3A3A3] md:text-xs">
                 (OVERVIEW)
               </p>
-              <p className="text-sm md:text-base">{project[0].overview}</p>
-              <p className="text-sm md:text-base">{project[0]?.description}</p>
+              <p className="line-height text-sm md:text-base">
+                {project[0].overview}
+              </p>
+              <p className="line-height text-sm md:text-base">
+                {project[0]?.description}
+              </p>
               {project[0]?.documentation && (
-                <p className="text-sm md:text-base">
+                <p className="line-height text-sm md:text-base">
                   Learn more{" "}
                   <a href={project[0]?.documentation}>
                     <span className="link text-purple-500">here.</span>
@@ -88,7 +92,9 @@ export function Slug() {
               <p className="text-2xs font-medium text-[#A3A3A3] md:text-xs">
                 (TECHNOLOGIES USED)
               </p>
-              <div className="text-sm md:text-base">{project[0].tech}</div>
+              <div className="line-height text-sm md:text-base">
+                {project[0].tech}
+              </div>
               <p className="mt-4 text-2xs font-medium text-[#A3A3A3] md:text-xs">
                 (YEAR COMPLETED)
               </p>

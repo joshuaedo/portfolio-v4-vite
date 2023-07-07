@@ -1,5 +1,6 @@
 /* eslint-disable */
 import "./Spotify.css";
+import { useState } from "react";
 
 export default function SpotifyPlaylist({ opacity }) {
   return (
@@ -18,16 +19,23 @@ export default function SpotifyPlaylist({ opacity }) {
 }
 
 export function HeroSpotifyPlaylist() {
+  const [loading, setLoading] = useState(true);
+  const handleOnload = () => {
+    setLoading(false);
+  };
   return (
     <iframe
       src="https://open.spotify.com/embed/playlist/2Socm9A6oHxtrRoGdtCkU9?utm_source=generator&theme=0"
       width="100%"
-      className={`rounded bg-none`}
+      className={`rounded bg-none transition ease-in-out ${
+        loading ? "opacity-0" : "opacity-100"
+      }`}
       height="100%"
       frameBorder="0"
       allowFullScreen=""
       allow="autoplay"
       allowTransparency={true}
+      onLoad={handleOnload}
     ></iframe>
   );
 }

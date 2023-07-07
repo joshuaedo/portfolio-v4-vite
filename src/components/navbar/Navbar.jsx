@@ -56,7 +56,7 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`text-reveal text-reveal__negative flex cursor-pointer justify-end space-x-10`}
+          className={`text-reveal__fade-in flex cursor-pointer justify-end space-x-10`}
         >
           <div className="flex w-[20vw] items-center justify-around ">
             <Link to="/about" className="hover:opacity-70">

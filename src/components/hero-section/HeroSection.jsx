@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import gsap from "gsap";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { HeroSpotifyPlaylist } from "../spotify/Spotify.jsx";
 
 export default function HeroSection() {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     gsap.to(".text-reveal", {
       y: 0,
@@ -13,10 +11,6 @@ export default function HeroSection() {
       delay: 0.5,
       duration: 0.2,
     });
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 4321);
   }, []);
 
   return (
@@ -44,9 +38,7 @@ export default function HeroSection() {
 
       <div className="flex w-full items-center justify-center">
         <div
-          className={` ${
-            loading ? "opacity-0" : "opacity-100"
-          } mt-16 flex h-[14vh] hero-spotify items-center justify-center md:hidden`}
+          className={`hero-spotify mt-16 flex h-[14vh] items-center justify-center md:hidden`}
         >
           <HeroSpotifyPlaylist />
         </div>

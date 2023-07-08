@@ -26,7 +26,10 @@ export function MobileLikes() {
           isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
         }`}
       >
-        <source src="/videos/likes.mp4" type="video/mp4" />
+        <source
+          src="https://joshuaedo.sirv.com/joshuaedo/public/videos/likes.mp4"
+          type="video/mp4"
+        />
       </video>
       <MobileCover
         className={`${isHovered ? "opacity-0" : "opacity-100"}`}

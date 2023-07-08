@@ -1,5 +1,3 @@
-import Image from "./../../../components/image/Image.jsx";
-
 export default function MobileSections({
   color,
   className,
@@ -30,8 +28,10 @@ export function MobileCover({ title, items, src, h, w, className }) {
       className={`${className} relative flex h-full w-full items-end p-5 transition ease-in-out`}
     >
       <div className="absolute right-5 top-5">
-        <Image
-          orgSrc={src}
+        <img
+          loading="lazy"
+          decoding="async"
+          src={src}
           alt="click icon"
           height={h}
           width={w}

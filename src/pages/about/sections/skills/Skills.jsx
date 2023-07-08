@@ -26,7 +26,10 @@ export function MobileSkills() {
           isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
         }`}
       >
-        <source src="/videos/skills-2.mp4" type="video/mp4" />
+        <source
+          src="https://joshuaedo.sirv.com/joshuaedo/public/videos/skills-2.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <MobileCover

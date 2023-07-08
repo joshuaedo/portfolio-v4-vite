@@ -8,14 +8,20 @@ export default function Image({
 }) {
   return (
     <picture>
-      <source type="image/webp" srcSet={webpSrc} />
-      <source type="image/png" srcSet={orgSrc} />
+      <source
+        type="image/webp"
+        srcSet={`https://joshuaedo.sirv.com/joshuaedo/public${webpSrc}`}
+      />
+      <source
+        type="image/png"
+        srcSet={`https://joshuaedo.sirv.com/joshuaedo/public${orgSrc}`}
+      />
       <img
         loading="lazy"
         height={height}
         width={width}
         className={className}
-        src={orgSrc}
+        src={`https://joshuaedo.sirv.com/joshuaedo/public${orgSrc}`}
         alt={alt}
         decoding="async"
       />

@@ -5,7 +5,7 @@ import ProjectsSection from "../../components/projects-section/ProjectsSection.j
 export function Home() {
   return (
     <>
-      <div className="container-padding home">
+      <div data-nosnippet className="container-padding home">
         <div className="section-padding pb-12 md:pb-0">
           <section className="relative">
             <HeroSection />

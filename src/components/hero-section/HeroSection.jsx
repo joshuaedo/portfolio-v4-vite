@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useEffect } from "react";
 import { HeroSpotifyPlaylist } from "../spotify/Spotify.jsx";
+import { Arrow } from "../image/Image.jsx";
 
 export default function HeroSection() {
   useEffect(() => {
@@ -32,7 +33,10 @@ export default function HeroSection() {
 
       <div className="mt-16 hidden justify-end md:flex">
         <Link to="mailto:joshua.edo01@gmail.com">
-          <span className="title-text link">AVAILABLE FOR HIRE ↗</span>{" "}
+          <div className="title-text link flex">
+            <span>AVAILABLE FOR HIRE</span>
+            <Arrow className="ml-1 mt-[2px] h-4 w-4" />
+          </div>{" "}
         </Link>
       </div>
 

@@ -1,10 +1,9 @@
-/* eslint-disable */
 import styles from "./Marquee.module.css";
-import { useRef, useEffect, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { useState } from "react";
+import { Arrow } from "../image/Image";
+import Marquee from "react-fast-marquee";
 
-export default function Marquee({ text, bgColor, stagnantText }) {
+export default function FooterMarquee({ text, bgColor }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -15,63 +14,41 @@ export default function Marquee({ text, bgColor, stagnantText }) {
     setIsHovered(false);
   };
 
-  const firstText = useRef(null);
-  const secondText = useRef(null);
-  const slider = useRef(null);
-  let xPercent = 0;
-  let direction = -1;
+  const MarqueeFooter = Array.from({ length: 99 }, (_, index) => (
+    <div
+      key={index}
+      className={`mr-[1rem] flex w-full items-center text-black ${bgColor}`}
+    >
+      <span className="">{text}</span>
+      <Arrow className="ml-[7.8px] h-6 w-6 md:ml-[12px] md:mt-[9px] md:h-12 md:w-12" />
+    </div>
+  ));
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.25,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-      x: "-500px",
-    });
-    requestAnimationFrame(animate);
-  }, []);
-
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    requestAnimationFrame(animate);
-    xPercent += 0.05 * direction;
-  };
+  const StagnantFooter = () => (
+    <div
+      className={`flex w-full items-center ${
+        !isHovered ? "bg-black text-white" : bgColor
+      }`}
+    >
+      <span className="">{text}</span>
+      <Arrow className="ml-[7.8px] h-6 w-6 md:ml-[12px] md:mt-[9px] md:h-12 md:w-12" />
+    </div>
+  );
 
   return (
     <main
-      className={`${styles.main} ${isHovered ? bgColor : "bg-black"}`}
+      className={`${styles.main} ${!isHovered ? "bg-black" : bgColor}`}
       onMouseOver={handleHover}
       onMouseLeave={handleStopHover}
     >
-      {isHovered ? (
-        <>
-          <div className={styles.sliderContainer}>
-            <div ref={slider} className={styles.slider}>
-              <p className="text-black" ref={firstText}>
-                {text}
-              </p>
-              <p className="text-black" ref={secondText}>
-                {text}
-              </p>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <p className="text-white">{stagnantText}</p>
-        </>
-      )}
+      <StagnantFooter />
+      <div
+        className={`absolute ${
+          isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
+        }`}
+      >
+        <Marquee>{MarqueeFooter}</Marquee>
+      </div>
     </main>
   );
 }

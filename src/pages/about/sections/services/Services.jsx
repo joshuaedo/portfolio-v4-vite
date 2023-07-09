@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MobileSections from "../MobileSections.jsx";
 import { MobileCover } from "../MobileSections.jsx";
+import { Arrow } from "../../../../components/image/Image.jsx";
 
 export function MobileServices() {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,9 +27,9 @@ export function MobileServices() {
         <div className="max-w-[70%]">
           <div className="section-text text-4xl text-black">HAVE AN IDEA?</div>
           <a href="mailto:joshua.edo01@gmail.com">
-            <p className="title-text link mt-2 text-black decoration-black ">
-              Get In Touch ↗
-            </p>
+            <div className="title-text link mt-2 flex items-center justify-center text-center text-black decoration-black">
+              <span>Get In Touch</span> <Arrow className="ml-1 h-3 w-3" />
+            </div>
           </a>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Arrow } from "../image/Image";
 
 export const NotFound = () => {
   const navigate = useNavigate();
@@ -8,9 +9,9 @@ export const NotFound = () => {
       <button
         onClick={() => navigate("/")}
         type="button"
-        className="title-text link"
+        className="title-text link flex"
       >
-        Go Home ↗
+        Go Home <Arrow className="ml-1 mt-[2px] h-4 w-4" />
       </button>
     </div>
   );

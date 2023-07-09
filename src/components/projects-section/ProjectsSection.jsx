@@ -1,5 +1,6 @@
 import ProjectsCard from "./ProjectsCard.jsx";
 import { Link } from "react-router-dom";
+import { Arrow } from "../image/Image.jsx";
 
 export default function ProjectsSection() {
   return (
@@ -23,10 +24,15 @@ export default function ProjectsSection() {
         </div>
       </div>
       <div className="line-height title-text link absolute bottom-10 right-10 hidden max-w-[7rem] text-right text-sm md:right-3 md:flex md:max-w-[10rem]">
-        <Link to="/projects">VIEW THE REST OF MY WORK ↗</Link>
+        <Link to="/projects" className="flex">
+          <span>VIEW THE REST OF MY WORK</span>
+        </Link>
       </div>
       <div className="title-text link flex items-center justify-center pt-10 text-xs md:hidden">
-        <Link to="/projects">VIEW THE REST OF MY WORK ↗</Link>
+        <Link to="/projects" className="flex">
+          <span>VIEW THE REST OF MY WORK</span>
+          <Arrow className="ml-1 h-4 w-4" />
+        </Link>
       </div>
     </>
   );

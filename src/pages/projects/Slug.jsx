@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import Image from "../../components/image/Image.jsx";
 import gsap from "gsap";
 import { useEffect } from "react";
+import { Arrow } from "../../components/image/Image.jsx";
 
 export function Slug() {
   const { slug } = useParams();
@@ -64,8 +65,12 @@ export function Slug() {
               <div className="mt-4 flex w-[90%] justify-between md:w-[70%]">
                 <div>
                   {project[0].href && (
-                    <a href={project[0]?.href}>
-                      <span className="title-text link">LIVE ↗</span>
+                    <a
+                      href={project[0]?.href}
+                      className="flex items-center justify-center"
+                    >
+                      <span className="title-text link mt-1">LIVE</span>
+                      <Arrow className="ml-1 mt-1 h-3 w-3" />
                     </a>
                   )}
                 </div>
@@ -73,15 +78,21 @@ export function Slug() {
                   {project[0].code && (
                     <a
                       href={`https://github.com/joshuaedo/${project[0]?.code}`}
+                      className="flex items-center justify-center"
                     >
-                      <span className="title-text link">CODE ↗</span>
+                      <span className="title-text link mt-1">CODE</span>
+                      <Arrow className="ml-1 mt-1 h-3 w-3" />
                     </a>
                   )}
                 </div>
                 <div>
                   {project[0].demo && (
-                    <a href={project[0]?.demo}>
-                      <span className="title-text link">DEMO ↗</span>
+                    <a
+                      href={project[0]?.demo}
+                      className="flex items-center justify-center"
+                    >
+                      <span className="title-text link mt-1">DEMO</span>
+                      <Arrow className="ml-1 mt-1 h-3 w-3" />
                     </a>
                   )}
                 </div>

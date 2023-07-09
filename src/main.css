@@ -16,7 +16,7 @@
   transition: transform 0.5s;
 }
 .text-reveal__fade-in {
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 2.5s;
   animation-iteration-count: 1;
 }
 @keyframes fadeInAnimation {

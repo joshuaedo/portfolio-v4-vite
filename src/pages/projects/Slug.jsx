@@ -11,6 +11,56 @@ export function Slug() {
   const project = projects.filter((p) => p.slug === slug);
   console.log(project[0]);
 
+  const SlugMeta = () => {
+    return (
+      <head>
+        {/* Browser */}
+        <meta
+          name="description"
+          content={`${project[0].overview}... ${project[0]?.description}`}
+        />
+        <meta name="current_path" content="/projects/:slug" />
+        <meta
+          name="subject"
+          content={`Joshua Edo • Projects • ${project[0].title}`}
+        />
+        <meta name="url" content="https://www.joshuaedo.com/projects/:slug" />
+        <meta
+          name="identifier-URL"
+          content="https://www.joshuaedo.com/projects/:slug"
+        />
+        <meta
+          name="pagename"
+          content={`Joshua Edo • Projects • ${project[0].title}`}
+        />
+        <meta
+          name="title"
+          content={`Joshua Edo • Projects • ${project[0].title}`}
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content={`Joshua Edo • Projects • ${project[0].title}`}
+        />
+        <meta property="og:description" content={project[0].overview} />
+        <meta
+          property="og:url"
+          content="https://joshuaedo.com/projects/:slug"
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:title"
+          content={`Joshua Edo • Projects • ${project[0].title}`}
+        />
+        <meta name="twitter:description" content={project[0].overview} />
+
+        <title>{`Joshua Edo • Projects • ${project[0].title}`}</title>
+      </head>
+    );
+  };
+
   useEffect(() => {
     gsap.to(".text-reveal", {
       y: 0,
@@ -22,6 +72,8 @@ export function Slug() {
 
   return (
     <>
+      <SlugMeta />
+
       <main className={`flex items-center justify-center`}>
         <div className="w-[90%]">
           <section className="text-reveal__container pb-[5vh] pt-[15vh] text-center md:flex md:pt-[30vh] md:text-start">

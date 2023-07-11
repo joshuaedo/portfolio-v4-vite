@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.joshuaedo.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.joshuaedo.com"/>
@@ -10,6 +10,9 @@
   </url>
   <url>
     <loc>https://www.joshuaedo.com/about/</loc>
+    <image:image>
+      <image:loc>https://joshuaedo.sirv.com/joshuaedo/public/images/original/=).png</image:loc>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.joshuaedo.com/about"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.joshuaedo.com/fr/about"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.joshuaedo.com/es/about"/>

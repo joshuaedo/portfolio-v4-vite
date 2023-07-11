@@ -4,7 +4,8 @@ import LocomotiveScroll from "locomotive-scroll";
 export default function LocomotiveScroller(props) {
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll({
-      duration: 2.5,
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
     });
 
     function locomotiveHeightBug() {

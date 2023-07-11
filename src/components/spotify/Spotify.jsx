@@ -10,7 +10,7 @@ export default function SpotifyPlaylist({ opacity }) {
       className={`spotify-playlist rounded bg-none ${opacity}`}
       height="100%"
       frameBorder="0"
-      allowTransparency={true}
+      allowtransparency="true"
       allowFullScreen=""
       allow="autoplay"
       loading="lazy"
@@ -34,7 +34,7 @@ export function HeroSpotifyPlaylist() {
       frameBorder="0"
       allowFullScreen=""
       allow="autoplay"
-      allowTransparency={true}
+      allowtransparency="true"
       onLoad={handleOnload}
     ></iframe>
   );

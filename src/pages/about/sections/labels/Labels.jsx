@@ -16,7 +16,7 @@ export function MobileLabels() {
         h="80px"
         w="80px"
         title="Labels"
-        items="22 • he/him • designer • engineer • developer"
+        items="20 • he/him • designer • engineer • developer"
       />
     </MobileSections>
   );

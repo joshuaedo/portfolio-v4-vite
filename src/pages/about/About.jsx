@@ -19,6 +19,7 @@ export function About() {
   return (
     <>
       <AboutMeta />
+
       <div className="container-padding">
         <section className="md:section-padding mb-24 mt-10 text-center text-xs md:min-h-[1vh] md:text-start">
           <AboutHero />

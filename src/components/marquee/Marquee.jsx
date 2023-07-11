@@ -27,7 +27,7 @@ export default function FooterMarquee({ text, bgColor }) {
   const StagnantFooter = () => (
     <div
       className={`flex w-full items-center ${
-        !isHovered ? "bg-black text-white" : bgColor
+        !isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
       }`}
     >
       <span className="">{text}</span>

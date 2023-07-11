@@ -20,6 +20,7 @@ export function MobileServices() {
       onMouseLeave={handleMouseLeave}
     >
       <div
+        data-nosnippet
         className={`absolute flex h-full w-full items-center justify-center text-center ${
           isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
         }`}

@@ -8,7 +8,7 @@ export function MobileLabels() {
       <img
         className={styles.avatar}
         src="https://joshuaedo.sirv.com/joshuaedo/public/images/original/=).png"
-        alt="=)"
+        alt=""
       />
 
       <MobileCover

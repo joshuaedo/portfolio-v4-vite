@@ -19,6 +19,7 @@ export function MobileLikes() {
       onMouseLeave={handleMouseLeave}
     >
       <video
+        data-nosnippet
         autoPlay
         muted
         loop

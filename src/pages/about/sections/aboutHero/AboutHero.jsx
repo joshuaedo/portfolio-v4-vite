@@ -11,7 +11,7 @@ export default function AboutHero() {
     });
   }, []);
   return (
-    <div className="text-reveal__container">
+    <div data-nosnippet className="text-reveal__container">
       <p className="text-reveal text-reveal__negative">who is joshua edo?</p>
     </div>
   );

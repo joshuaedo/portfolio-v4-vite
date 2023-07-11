@@ -19,6 +19,7 @@ export function MobileSkills() {
       onMouseLeave={handleMouseLeave}
     >
       <video
+        data-nosnippet
         autoPlay
         muted
         loop

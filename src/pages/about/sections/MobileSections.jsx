@@ -25,6 +25,7 @@ export default function MobileSections({
 export function MobileCover({ title, items, src, h, w, className }) {
   return (
     <div
+      data-nosnippet
       className={`${className} relative flex h-full w-full items-end p-5 transition ease-in-out`}
     >
       <div className="absolute right-5 top-5">

@@ -4,7 +4,7 @@ export default function HomeMeta() {
       {/* Browser */}
       <meta
         name="description"
-        content="Joshua Edo is a Software Developer specialized in creating functional, user-friendly web applications with great interface and SEO."
+        content="Joshua Edo is an experienced Software Developer specialized in building web apps with great functionality, user-friendly interfaces, and strong SEO."
       />
       <meta name="current_path" content="/" />
       <meta name="subject" content="Home on Joshua Edo" />

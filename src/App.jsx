@@ -23,10 +23,8 @@ export function App() {
     }, 4900);
   }
 
-  const helmetContext = {};
-
   return (
-    <HelmetProvider context={helmetContext}>
+    <HelmetProvider>
       <BrowserRouter>
         <div className="bg-black tracking-wider text-white">
           {loading ? (

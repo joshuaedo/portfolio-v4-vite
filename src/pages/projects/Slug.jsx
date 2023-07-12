@@ -5,7 +5,6 @@ import Image from "../../components/image/Image.jsx";
 import gsap from "gsap";
 import { useEffect } from "react";
 import { Arrow } from "../../components/image/Image.jsx";
-import { Helmet } from "react-helmet";
 
 export function Slug() {
   const { slug } = useParams();
@@ -14,7 +13,7 @@ export function Slug() {
 
   const SlugMeta = () => {
     return (
-      <Helmet>
+      <header>
         {/* Browser */}
         <meta
           name="description"
@@ -58,7 +57,7 @@ export function Slug() {
         <meta name="twitter:description" content={project[0].overview} />
 
         <title>{`Joshua Edo • Projects • ${project[0].title}`}</title>
-      </Helmet>
+      </header>
     );
   };
 

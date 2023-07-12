@@ -1,7 +1,6 @@
-import { Helmet } from "react-helmet";
 export default function HomeMeta() {
   return (
-    <Helmet>
+    <header>
       {/* Browser */}
       <meta
         name="description"
@@ -24,6 +23,6 @@ export default function HomeMeta() {
       <meta name="twitter:description" content="Home on Joshua Edo's Website" />
 
       <title>Joshua Edo • Home</title>
-    </Helmet>
+    </header>
   );
 }

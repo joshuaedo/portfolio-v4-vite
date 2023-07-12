@@ -1,6 +1,7 @@
+import { Helmet } from "react-helmet-async";
 export default function AboutMeta() {
   return (
-    <head>
+    <Helmet>
       {/* Browser */}
       <meta
         name="description"
@@ -23,6 +24,6 @@ export default function AboutMeta() {
       <meta name="twitter:description" content="Get to know Josh." />
 
       <title>Who Is Joshua Edo?</title>
-    </head>
+    </Helmet>
   );
 }

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: / 
 Disallow: /cgi-bin/
+Disallow: /projects/:slug
 Sitemap: https://www.joshuaedo.com/sitemap.xml

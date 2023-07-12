@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Header from "./components/header";
 import { BrowserRouter } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import Cursor from "./components/cursor/Cursor.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -24,34 +23,32 @@ export function App() {
   }
 
   return (
-    <HelmetProvider>
-      <BrowserRouter>
-        <div className="bg-black tracking-wider text-white">
-          {loading ? (
-            <>
-              <HomeLoader />
-            </>
-          ) : (
-            <>
-              <HeaderProvider>
-                {/* <LenisScroller> */}
-                {/* <LocomotiveScroller> */}
-                <ScrollToTop>
-                  <Header />
-                  <Navbar />
-                  <MobileNavbar />
-                  <Cursor />
-                  <Router />
-                  <GeneralMeta />
-                  <Footer />
-                </ScrollToTop>
-                {/* </LocomotiveScroller> */}
-                {/* </LenisScroller> */}
-              </HeaderProvider>
-            </>
-          )}
-        </div>
-      </BrowserRouter>
-    </HelmetProvider>
+    <BrowserRouter>
+      <div className="bg-black tracking-wider text-white">
+        {loading ? (
+          <>
+            <HomeLoader />
+          </>
+        ) : (
+          <>
+            <HeaderProvider>
+              {/* <LenisScroller> */}
+              {/* <LocomotiveScroller> */}
+              <ScrollToTop>
+                <Header />
+                <Navbar />
+                <MobileNavbar />
+                <Cursor />
+                <Router />
+                <GeneralMeta />
+                <Footer />
+              </ScrollToTop>
+              {/* </LocomotiveScroller> */}
+              {/* </LenisScroller> */}
+            </HeaderProvider>
+          </>
+        )}
+      </div>
+    </BrowserRouter>
   );
 }

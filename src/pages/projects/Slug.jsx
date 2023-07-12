@@ -5,7 +5,7 @@ import Image from "../../components/image/Image.jsx";
 import gsap from "gsap";
 import { useEffect } from "react";
 import { Arrow } from "../../components/image/Image.jsx";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 export function Slug() {
   const { slug } = useParams();

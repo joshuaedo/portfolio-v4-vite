@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 export default function ProjectsMeta() {
   return (
     <Helmet>

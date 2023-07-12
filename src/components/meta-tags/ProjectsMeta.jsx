@@ -1,6 +1,6 @@
 export default function ProjectsMeta() {
   return (
-    <header>
+    <head>
       {/* Browser */}
       <meta
         name="description"
@@ -32,6 +32,6 @@ export default function ProjectsMeta() {
       />
 
       <title>Joshua Edo • Projects</title>
-    </header>
+    </head>
   );
 }

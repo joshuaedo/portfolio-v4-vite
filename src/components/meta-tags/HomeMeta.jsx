@@ -1,6 +1,6 @@
 export default function HomeMeta() {
   return (
-    <header>
+    <head>
       {/* Browser */}
       <meta
         name="description"
@@ -23,6 +23,6 @@ export default function HomeMeta() {
       <meta name="twitter:description" content="Home on Joshua Edo's Website" />
 
       <title>Joshua Edo • Home</title>
-    </header>
+    </head>
   );
 }

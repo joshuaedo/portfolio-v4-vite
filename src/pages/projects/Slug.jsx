@@ -13,7 +13,7 @@ export function Slug() {
 
   const SlugMeta = () => {
     return (
-      <header>
+      <head>
         {/* Browser */}
         <meta
           name="description"
@@ -57,7 +57,7 @@ export function Slug() {
         <meta name="twitter:description" content={project[0].overview} />
 
         <title>{`Joshua Edo • Projects • ${project[0].title}`}</title>
-      </header>
+      </head>
     );
   };
 

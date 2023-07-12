@@ -1,6 +1,6 @@
 export default function AboutMeta() {
   return (
-    <header>
+    <head>
       {/* Browser */}
       <meta
         name="description"
@@ -23,6 +23,6 @@ export default function AboutMeta() {
       <meta name="twitter:description" content="Get to know Josh." />
 
       <title>Who Is Joshua Edo?</title>
-    </header>
+    </head>
   );
 }

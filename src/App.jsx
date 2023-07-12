@@ -6,7 +6,6 @@ import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import { Router } from "./components/router/Router.jsx";
 import { HomeLoader } from "./components/loader/Loading.jsx";
-import GeneralMeta from "./components/meta-tags/GeneralMeta";
 import { HeaderProvider } from "./contexts/HeaderContext.jsx";
 import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
 import { ScrollToTop } from "./components/smooth-scroll/ScrollToTop.jsx";
@@ -40,7 +39,6 @@ export function App() {
                 <MobileNavbar />
                 <Cursor />
                 <Router />
-                <GeneralMeta />
                 <Footer />
               </ScrollToTop>
               {/* </LocomotiveScroller> */}

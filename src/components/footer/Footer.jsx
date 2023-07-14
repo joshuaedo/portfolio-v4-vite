@@ -40,10 +40,10 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FooterMarquee text="EMAIL" bgColor="bg-yellow-500" />
+              <FooterMarquee text="INSTAGRAM" bgColor="bg-yellow-500" />
             </Link>
             <Link
-              to="https://youtube.com/@edojoshua"
+              to="https://instagram.com/edo_joshua"
               target="_blank"
               rel="noopener noreferrer"
             >

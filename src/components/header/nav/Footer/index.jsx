@@ -4,7 +4,7 @@ import {
   GithubIcon,
   TwitterIcon,
   LinkedInIcon,
-  EmailIcon,
+  InstagramIcon,
   YoutubeIcon,
 } from "../../../image/Image.jsx";
 
@@ -33,11 +33,11 @@ export default function index() {
         <LinkedInIcon />
       </Link>
       <Link
-        to="mailto:joshua.edo01@gmail.com"
+        to="https://instagram.com/edo_joshua"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <EmailIcon />
+        <InstagramIcon />
       </Link>
       <Link
         to="https://youtube.com/@edojoshua"

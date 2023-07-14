@@ -36,14 +36,14 @@ export default function Footer() {
               <FooterMarquee text="LINKEDIN" bgColor="bg-blue-500" />
             </Link>
             <Link
-              to="mailto:joshua.edo01@gmail.com"
+              to="https://instagram.com/edo_joshua"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FooterMarquee text="INSTAGRAM" bgColor="bg-yellow-500" />
             </Link>
             <Link
-              to="https://instagram.com/edo_joshua"
+              to="https://youtube.com/@edojoshua"
               target="_blank"
               rel="noopener noreferrer"
             >

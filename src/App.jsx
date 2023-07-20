@@ -1,14 +1,15 @@
-import { useState } from "react";
-import Header from "./components/header";
-import { BrowserRouter } from "react-router-dom";
-import Cursor from "./components/cursor/Cursor.jsx";
-import Footer from "./components/footer/Footer.jsx";
-import Navbar from "./components/navbar/Navbar.jsx";
-import { Router } from "./components/router/Router.jsx";
-import { HomeLoader } from "./components/loader/Loading.jsx";
-import { HeaderProvider } from "./contexts/HeaderContext.jsx";
-import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
-import { ScrollToTop } from "./components/smooth-scroll/ScrollToTop.jsx";
+import { useState } from 'react';
+import Header from './components/header';
+import { inject } from '@vercel/analytics';
+import { BrowserRouter } from 'react-router-dom';
+import Cursor from './components/cursor/Cursor.jsx';
+import Footer from './components/footer/Footer.jsx';
+import Navbar from './components/navbar/Navbar.jsx';
+import { Router } from './components/router/Router.jsx';
+import { HomeLoader } from './components/loader/Loading.jsx';
+import { HeaderProvider } from './contexts/HeaderContext.jsx';
+import MobileNavbar from './components/mobile-navbar/MobileNavbar.jsx';
+import { ScrollToTop } from './components/smooth-scroll/ScrollToTop.jsx';
 // import LenisScroller from "./components/smooth-scroll/LenisScroller.jsx";
 // import LocomotiveScroller from "./components/smooth-scroll/LocomotiveScroller.jsx";
 
@@ -21,9 +22,13 @@ export function App() {
     }, 4900);
   }
 
+  {
+    inject();
+  }
+
   return (
     <BrowserRouter>
-      <div className="bg-black tracking-wider text-white">
+      <div className='bg-black tracking-wider text-white'>
         {loading ? (
           <>
             <HomeLoader />

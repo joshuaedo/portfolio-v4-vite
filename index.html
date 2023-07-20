@@ -122,8 +122,15 @@
         "hasOccupation": {
           "@type": "Occupation",
           "name": "Software Developer",
-          "estimatedSalary": "$120k",
-          "occupationLocation": "Remote",
+          "estimatedSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "$120,000"
+          },
+          "occupationLocation": {
+            "@type": "AdministrativeArea",
+            "address": "Remote"
+          },
+          "mainEntityOfPage": "https://www.joshuaedo.com",
           "description": "Software Developer specialized in Frontend Web Development with expertise in JavaScript, TypeScript, HTML5, CSS3, ReactJs, NextJs, Bootstrap, Tailwind, REST, and GraphQL.",
           "skills": [
             "JavaScript",

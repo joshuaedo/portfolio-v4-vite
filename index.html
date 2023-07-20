@@ -123,30 +123,30 @@
           "@type": "Occupation",
           "name": "Software Developer",
           "estimatedSalary": {
-            "@type": "MonetaryAmount",
+            "@type": "MonetaryAmountDistribution",
+            "duration": "1Y",
             "currency": "USD",
-            "value": "120000"
+            "percentile10": 72000,
+            "percentile25": 86000,
+            "median": 109000,
+            "percentile75": 120000,
+            "percentile90": 140000
           },
           "occupationLocation": {
-            "@type": "AdministrativeArea",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Uyo",
-              "postalCode": "520102"
-            }
+            "@type": "Country",
+            "name": "NGN"
           },
-          "mainEntityOfPage": {
-            "@type": "URL",
-            "url": "https://www.joshuaedo.com",
-            "significantLinks": [
-              "https://facebook.com/joshua.edo.587",
-              "https://twitter.com/thegr8joshua",
-              "https://instagram.com/edo_joshua",
-              "https://linkedin.com/in/joshuaedo",
-              "https://youtube.com/@edojoshua",
-              "https://medium.com/@joshua.edo01",
-              "https://github.com/joshuaedo"
-            ]
+          "occupationalCategory": {
+            "@type": "CategoryCode",
+            "inCodeSet": {
+              "@type": "CategoryCodeSet",
+              "name": "O*Net-SOC",
+              "dateModified": "2023",
+              "url": "https://www.onetonline.org/"
+            },
+            "codeValue": "15-1252.00",
+            "name": "Software Developer",
+            "url": "https://www.onetonline.org/link/summary/15-1252.00"
           },
           "description": "Software Developer specialized in Frontend Web Development with expertise in JavaScript, TypeScript, HTML5, CSS3, ReactJs, NextJs, Bootstrap, Tailwind, REST, and GraphQL.",
           "skills": [

@@ -28,7 +28,7 @@ const projects = [
     code: 'netflix',
     color: '#EFE8D3',
     tech: 'ReactJs, TMDB API, Redux, React-Router, Firebase, Lodash',
-    href: 'https://binge.joshuaedo.com/',
+    href: 'https://movie.joshuaedo.com/',
     year: 2023,
     demo: 'https://youtu.be/krHx-I6npkM',
     overview: 'A movie trailer app.',

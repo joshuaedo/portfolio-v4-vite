@@ -7,7 +7,8 @@ const projects = [
     code: 'spotify',
     color: '#FFF',
     tech: 'NextJs, Spotify API, Next-Auth, Recoil, Tailwind, Framer-Motion',
-    href: 'https://stream.joshuaedo.com/',
+    href: 'https://joshuaedo-spotify.vercel.app/',
+    // href: 'https://stream.joshuaedo.com/',
     year: 2023,
     demo: 'https://youtu.be/RDafUnvD090',
     overview:

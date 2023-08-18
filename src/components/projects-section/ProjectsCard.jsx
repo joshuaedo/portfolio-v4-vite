@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import Image from "../image/Image.jsx";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Image from '../image/Image.jsx';
 
 export default function ProjectsCard({ i, name, slug }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -10,25 +10,25 @@ export default function ProjectsCard({ i, name, slug }) {
   };
 
   return (
-    <div className="relative px-[1.5rem] md:pl-[2rem]">
+    <div className='relative px-[1.5rem] md:pl-[2rem]'>
       <Link to={`/projects/${slug}`}>
         <div
-          className="flex cursor-pointer items-center justify-center"
+          className='flex cursor-pointer items-center justify-center'
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
-          <div className="relative">
+          <div className='relative'>
             <Image
               webpSrc={`/images/webp/home/${name}/${i}.webp`}
               orgSrc={`/images/original/home/${name}/${i}.jpg`}
               height={1000}
               width={1000}
               alt={name}
-              className="h-[320px] w-[233px]  rounded-sm object-cover md:h-[457px] md:w-[332px]"
+              className='h-[320px] w-[233px] rounded-sm object-cover md:h-[457px] md:w-[332px]'
             />
             <div
               className={`absolute left-0 top-0 h-full w-full transition-opacity duration-500 ${
-                isHovered ? "opacity-50" : "opacity-0"
+                isHovered ? 'opacity-50' : 'opacity-0'
               }`}
             >
               <Image
@@ -37,13 +37,13 @@ export default function ProjectsCard({ i, name, slug }) {
                 height={1000}
                 width={1000}
                 alt={name}
-                className="h-[320px] w-[233px]  rounded-sm object-cover md:h-[457px] md:w-[332px]"
+                className='h-[320px] w-[233px]  rounded-sm object-cover md:h-[457px] md:w-[332px]'
               />
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center">
-          <p className="inline w-[233px] pt-3 text-2xl font-thin md:w-[332px] md:text-3xl">
+        <div className='flex items-center justify-center'>
+          <p className='inline w-[233px] pt-3 text-2xl font-thin md:w-[332px] md:text-3xl'>
             {name}
           </p>
         </div>

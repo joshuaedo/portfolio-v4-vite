@@ -41,12 +41,11 @@ export function Projects() {
         <div
           className={`flex items-center justify-center bg-black pt-4 md:pt-10`}
         >
-          <div className="w-[90%] cursor-pointer">
+          <div className="w-[90%]">
             <div className="title-text">Archive</div>
-
             <Link
               to="https://joshuaedo.notion.site/joshuaedo/Joshua-s-Archive-a1118438aa1b4b6d8836004599e18308"
-              className="flex h-[220px] w-fit items-center"
+              className="flex h-[220px] w-fit cursor-pointer items-center"
               onMouseOver={handleMouseOver}
               onMouseLeave={handleMouseLeave}
             >

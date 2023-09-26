@@ -1,6 +1,47 @@
 // tech: frameworks, api, semi-frameworks, stylers
 const projects = [
   {
+    title: "Z",
+    src: "z",
+    slug: "z",
+    code: null,
+    color: "#FFF",
+    tech: "Typescript, NextJs, Prisma, Next-Auth, React-Query, Upload-Thing, Tailwind",
+    href: "https://z.joshuaedo.com",
+    year: 2023,
+    demo: null,
+    overview: "Join the conversation.",
+    description:
+      "A community-oriented social network inspired by Reddit and Twitter.",
+    documentation: null,
+    next: {
+      title: "Galleria",
+      year: "2023",
+      slug: "galleria",
+    },
+  },
+  {
+    title: "Galleria",
+    src: "galleria",
+    slug: "galleria",
+    code: "galleria",
+    color: "#8C8C8C",
+    tech: "Typescript, NextJs, Pexels API, Next-Auth, React-Query, DND-Kit, Tailwind",
+    href: "https://galleria.joshuaedo.com",
+    year: 2023,
+    demo: null,
+    overview:
+      "An interactive stock image gallery with drag-and-drop functionality.",
+    description:
+      "Galleria is my version of the HNGX 2023 Frontend Stage 3 Task.",
+    documentation: null,
+    next: {
+      title: "Spotify",
+      src: "spotify",
+      slug: "spotify",
+    },
+  },
+  {
     title: "Spotify",
     src: "spotify",
     slug: "spotify",
@@ -128,9 +169,9 @@ const projects = [
       "Built while making the transition from create-react-app to NextJs.",
     documentation: null,
     next: {
-      title: "Netflix",
+      title: "joshua-GPT",
       year: "2023",
-      slug: "netflix",
+      slug: "joshua-gpt",
     },
   },
   // {
@@ -188,9 +229,9 @@ const projects = [
       "Not only can it answer predefined questions about myself, this bot is also connected to the Open AI API, allowing it to function similarly to chatGPT.",
     documentation: null,
     next: {
-      title: "Style Your Div",
-      year: "2023",
-      slug: "style-your-div",
+      title: "Ryter",
+      year: "2022",
+      slug: "ryter",
     },
   },
   // {
@@ -228,9 +269,9 @@ const projects = [
       "From note-taking to speech-to-text functionality, this website is an amalgamation of 5 separate web apps that could prove useful to the average writer.",
     documentation: "https://github.com/joshuaedo/ryter/#readme",
     next: {
-      title: "Business Card",
-      year: "2023",
-      slug: "business-card",
+      title: "Portfolio V2",
+      year: "2022",
+      slug: "portfolio-v2",
     },
   },
   // {

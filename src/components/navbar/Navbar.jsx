@@ -49,7 +49,7 @@ export default function Navbar() {
             className={`{
           ${
             loading ? "opacity-0" : "opacity-100"
-          } relative flex h-[12vh] w-[25rem] items-center justify-center`}
+          } no-scrollbar relative flex h-[12vh] w-[25rem] items-center justify-center md:h-[13vh]`}
           >
             <SpotifyLogo opacity={`${isHovered ? "hovered" : ""}`} />
             <SpotifyPlaylist opacity={`${isHovered ? "hovered" : ""}`} />

@@ -45,31 +45,32 @@ export function Projects() {
             <div className="title-text">Archive</div>
             <Link
               to="https://joshuaedo.notion.site/joshuaedo/Joshua-s-Archive-a1118438aa1b4b6d8836004599e18308"
-              className="flex h-[220px] w-fit cursor-pointer items-center"
+              className="relative flex h-[220px] w-fit cursor-pointer items-center"
               onMouseOver={handleMouseOver}
               onMouseLeave={handleMouseLeave}
             >
-              {!isHovered ? (
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="https://joshuaedo.sirv.com/joshuaedo/public/images/archive/closed.png"
-                  alt="click icon"
-                  height="210px"
-                  width="210px"
-                  className="-mb-5 -ml-3"
-                />
-              ) : (
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="https://media0.giphy.com/media/3FvaG9XbBRbLtdaUUP/giphy.gif"
-                  alt="click icon"
-                  height="200px"
-                  width="200px"
-                  className="-ml-2"
-                />
-              )}
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://joshuaedo.sirv.com/joshuaedo/public/images/archive/closed.png"
+                alt="click icon"
+                height="210px"
+                width="210px"
+                className={`${
+                  isHovered ? "opacity-0" : "opacity-100"
+                } trasition -mb-5 -ml-3 ease-in`}
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://media0.giphy.com/media/3FvaG9XbBRbLtdaUUP/giphy.gif"
+                alt="click icon"
+                height="200px"
+                width="200px"
+                className={`${
+                  !isHovered ? "z-2 opacity-0" : "-z-2 opacity-100"
+                } trasition absolute -ml-2.5 ease-in`}
+              />
             </Link>
           </div>
         </div>

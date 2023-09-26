@@ -6,12 +6,12 @@ export const useDate = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      // Creates an interval which will update the current data every minute
-      // This will trigger a rerender every component that uses the useDate hook.
+      // Creates an interval which will update the current date every minute
+      // This will trigger a rerender for every component that uses the useDate hook.
       setDate(new Date());
     }, 60 * 1000);
     return () => {
-      clearInterval(timer); // Return a funtion to clear the timer so that it will stop being called on unmount
+      clearInterval(timer); // Return a function to clear the timer so that it will stop being called on unmount
     };
   }, []);
 
@@ -19,6 +19,9 @@ export const useDate = () => {
   const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, {
     month: "long",
   })}\n\n`;
+
+  const month = today.getMonth();
+  const isTimeVisible = !(month >= 8 && month <= 11); // Hides time during September to December
 
   const hour = today.getHours();
   const wish = `Good ${
@@ -35,5 +38,6 @@ export const useDate = () => {
     date,
     time,
     wish,
+    isTimeVisible,
   };
 };

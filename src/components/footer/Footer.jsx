@@ -3,8 +3,8 @@ import { useDate } from "../../hooks/useDate.jsx";
 import FooterMarquee from "../marquee/Marquee.jsx";
 
 export default function Footer() {
-  const { date, time, wish } = useDate();
-  const currentTime = time;
+  const { date, time, wish, isTimeVisible } = useDate();
+  const currentTime = isTimeVisible ? time : "";
 
   return (
     <>
@@ -54,7 +54,10 @@ export default function Footer() {
             className={`title-text flex h-10 items-center justify-between text-center`}
           >
             <p>{date}</p>
-            <p className="time hidden">{currentTime}</p> <p>{wish}</p>
+            {isTimeVisible && (
+              <p className="time hidden md:block">{currentTime}</p>
+            )}
+            <p>{wish}</p>
           </div>
         </div>
       </footer>

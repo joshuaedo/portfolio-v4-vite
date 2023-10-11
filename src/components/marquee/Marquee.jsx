@@ -37,15 +37,19 @@ export default function FooterMarquee({ text, bgColor }) {
 
   return (
     <main
-      className={`${styles.main} ${!isHovered ? "bg-black" : bgColor}`}
+      className={`${styles.main}`}
       onMouseOver={handleHover}
       onMouseLeave={handleStopHover}
     >
       <StagnantFooter />
       <div
-        className={`absolute ${
-          isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"
-        }`}
+        className={`absolute ${styles.marquee} ${
+          !isHovered ? "bg-black" : bgColor
+        } ${isHovered ? "z-[2] opacity-100" : "z-[-2] opacity-0"}`}
+        style={{
+          clipPath: isHovered ? "inset(0 0 0)" : "inset(50% 0 50%",
+          transition: "clip-path 0.7s",
+        }}
       >
         <Marquee>{MarqueeFooter}</Marquee>
       </div>

@@ -9,7 +9,8 @@
 }
 
 @media (min-width: 600px) {
-  .main {
+  .main,
+  .marquee {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }

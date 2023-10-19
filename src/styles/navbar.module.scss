@@ -1,0 +1,174 @@
+.header {
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  .button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    width: 100%;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 40%;
+      margin: auto;
+      background-color: black;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      transform: rotate(45deg);
+      top: -1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 29px;
+    .button {
+      height: 50px;
+      width: 50px;
+    }
+    .burger {
+      &::after {
+        top: -4px;
+      }
+      &::before {
+        top: 4px;
+      }
+    }
+    .burgerActive {
+      &::after {
+        transform: rotate(45deg);
+        top: -0.4px;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        top: 0px;
+      }
+    }
+  }
+}
+
+.menu {
+  height: 100vh;
+  background-color: #a3a3a3;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: black;
+  z-index: 5;
+
+  .body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      font-size: 70px;
+      gap: 13px;
+      margin-right: 25px;
+      margin-top: 50px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 100vw;
+    .body {
+      height: 100%;
+      padding: 50px;
+      padding-top: 100px;
+      .nav {
+        font-size: 65px;
+        gap: 15px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  font-size: 12px;
+  gap: 40px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    margin-top: 0;
+    width: 98%;
+  }
+}
+
+.svgCurve{
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 100px;
+  height: 100%;
+  fill: rgb(41, 41, 41);
+  stroke: none;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+  }
+}
+
+

@@ -34,10 +34,13 @@ export const useDate = () => {
     minute: "numeric",
   });
 
+const isEbening = hour >= 17;
+
   return {
     date,
     time,
     wish,
     isTimeVisible,
+    isEbening,
   };
 };

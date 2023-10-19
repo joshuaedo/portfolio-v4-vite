@@ -13,9 +13,8 @@ import {
 import Card from '../ui/card.jsx';
 
 export default function Footer() {
-  const { date, time, wish, isTimeVisible } = useDate();
+  const { date, time, wish, isTimeVisible, isEbening } = useDate();
   const currentTime = isTimeVisible ? time : '';
-  const isEbening = wish === 'Good Ebening';
 
   return (
     <footer className='flex items-center justify-center bg-black pt-4 md:pt-10'>

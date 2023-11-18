@@ -21,6 +21,8 @@ export function App() {
     return () => clearInterval(intervalId);
   }, []);
 
+  ///
+
   return (
     <div className="bg-black tracking-wider text-white">
       {isBirthday ? (

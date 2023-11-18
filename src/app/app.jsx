@@ -1,47 +1,42 @@
-import { useState } from 'react';
-import { inject } from '@vercel/analytics';
-import { BrowserRouter } from 'react-router-dom';
-import Header, { MobileHeader } from '@/components/layout/header';
-import Cursor from '@/components/ui/cursor';
-import { Router } from '@/components/layout/router';
-import Footer from '@/components/layout/footer';
-import Navbar from '@/components/layout/navbar';
-import { Loader } from '@/components/ui/loader';
-import Providers from '@/components/layout/providers';
+import { useState, useEffect } from "react";
+import Header from "@/components/layout/header";
+import Cursor from "@/components/ui/cursor";
+import Footer from "@/components/layout/footer";
+import Providers from "@/components/layout/providers";
+import { Home } from "./pages/home";
+import CountdownTimer from "@/components/ui/counter";
 
 export function App() {
-  const [loading, setLoading] = useState(true);
+  const [isBirthday, setIsBirthday] = useState(false);
 
-  {
-    setTimeout(() => {
-      setLoading(false);
-    }, 4900);
-  }
-
-  {
-    inject();
-  }
+  useEffect(() => {
+    const checkIsBirthday = () => {
+      const currentDate = new Date();
+      const isBirthdayToday =
+        currentDate.getDate() === 28 && currentDate.getMonth() === 10; // Months are 0-indexed, so November is 10.
+      setIsBirthday(isBirthdayToday);
+    };
+    checkIsBirthday();
+    const intervalId = setInterval(checkIsBirthday, 24 * 60 * 60 * 1000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
-    <BrowserRouter>
-      <div className='bg-black tracking-wider text-white'>
-        {loading ? (
-          <>
-            <Loader />
-          </>
-        ) : (
-          <>
-            <Providers>
-              <Header />
-              <MobileHeader />
-              <Navbar />
-              <Cursor />
-              <Router />
-              <Footer />
-            </Providers>
-          </>
-        )}
-      </div>
-    </BrowserRouter>
+    <div className="bg-black tracking-wider text-white">
+      {isBirthday ? (
+        <>
+          <CountdownTimer />
+        </>
+      ) : (
+        <>
+          <Providers>
+            <Header />
+            <Cursor />
+            <Home />
+            <Footer />
+          </Providers>
+        </>
+      )}
+    </div>
   );
 }

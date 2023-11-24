@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import Header from "@/components/layout/header";
-import Cursor from "@/components/ui/cursor";
-import Footer from "@/components/layout/footer";
-import Providers from "@/components/layout/providers";
-import { Home } from "./pages/home";
-import CountdownTimer from "@/components/ui/counter";
+import { useState, useEffect } from 'react';
+import Header from '@/components/layout/header';
+import Cursor from '@/components/ui/cursor';
+import Footer from '@/components/layout/footer';
+import Providers from '@/components/layout/providers';
+import { Home } from './pages/home';
+import CountdownTimer from '@/components/ui/counter';
 
 export function App() {
   const [isBirthday, setIsBirthday] = useState(false);
@@ -21,10 +21,8 @@ export function App() {
     return () => clearInterval(intervalId);
   }, []);
 
-  ///
-
   return (
-    <div className="bg-black tracking-wider text-white">
+    <div className='bg-black tracking-wider text-white'>
       {isBirthday ? (
         <>
           <CountdownTimer />

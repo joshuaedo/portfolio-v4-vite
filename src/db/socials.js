@@ -15,7 +15,7 @@ export const socialLinks = [
   },
   {
     name: 'TWITTER',
-    url: 'https://twitter.com/thegr8joshua',
+    url: 'https://x.com/j0shuaedo',
     icon: TwitterIcon,
     bgColor: 'bg-green-500',
   },

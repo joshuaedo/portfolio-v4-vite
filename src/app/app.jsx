@@ -23,7 +23,7 @@ export function App() {
 
   return (
     <div className='bg-black tracking-wider text-white'>
-      {isBirthday ? (
+      {!isBirthday ? (
         <>
           <CountdownTimer />
         </>

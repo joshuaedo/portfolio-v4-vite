@@ -89,7 +89,7 @@ export function Home() {
                   <ProjectsCard i={5} name='joshuaGPT' slug='joshua-gpt' />
                 </div>
                 <div data-scroll data-scroll-speed='0.8' className='space-y-32'>
-                  <ProjectsCard i={3} name='spotify' slug='spotify' />
+                  <ProjectsCard i={2} name='sandra' slug='sandra' />
                   <ProjectsCard i={2} name='google' slug='google' />
                 </div>
               </div>

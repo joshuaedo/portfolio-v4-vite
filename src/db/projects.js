@@ -1,5 +1,25 @@
-// tech: frameworks, api, semi-frameworks, stylers
+// tech: frameworks, api, semi-frameworks, stylers, animators
 const projects = [
+  {
+    title: 'Sandra',
+    src: 'sandra',
+    slug: 'sandra',
+    code: 'https://github.com/sandraokpara/blog',
+    color: '#FFF',
+    tech: 'Typescript, NextJs, Next-Auth, Hygraph, Sass, Tailwind, Framer-Motion, GSAP',
+    href: 'https://sandraokpara.com',
+    year: 2023,
+    demo: null,
+    overview: 'Writing on Earth.',
+    description:
+      "This blog is a canvas for Sandra Okpara's diverse range of interests.",
+    documentation: 'https://github.com/sandraokpara/blog#readme',
+    next: {
+      title: 'Z',
+      year: '2023',
+      slug: 'z',
+    },
+  },
   {
     title: 'Z',
     src: 'z',
@@ -195,45 +215,6 @@ const projects = [
     description:
       'From note-taking to speech-to-text functionality, this website is an amalgamation of 5 separate web apps that could prove useful to the average writer.',
     documentation: 'https://github.com/joshuaedo/ryter/#readme',
-    next: {
-      title: 'Portfolio V2',
-      year: '2022',
-      slug: 'portfolio-v2',
-    },
-  },
-  {
-    title: 'Portfolio V2',
-    src: 'portfolio-v2',
-    slug: 'portfolio-v2',
-    code: 'portfolio-V2',
-    color: '#EFE8D3',
-    tech: 'HTML, CSS',
-    href: 'https://v2.joshuaedo.com/',
-    year: 2022,
-    demo: null,
-    overview: 'My second portfolio website.',
-    description:
-      "Not a fancy landing page by today's standards but greatly improved from the first.",
-    documentation: null,
-    next: {
-      title: 'Portfolio V1',
-      year: '2022',
-      slug: 'portfolio-v1',
-    },
-  },
-  {
-    title: 'Portfolio V1',
-    src: 'portfolio-v1',
-    slug: 'portfolio-v1',
-    code: 'portfolio-V1',
-    color: '#706D63',
-    tech: 'HTML',
-    href: 'https://v1.joshuaedo.com/',
-    year: 2022,
-    demo: null,
-    overview: 'My first ever attempt at a portfolio website.',
-    description: "A grounding reminder of how far I've come.",
-    documentation: null,
     next: null,
   },
 ];

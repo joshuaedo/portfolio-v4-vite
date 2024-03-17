@@ -44,8 +44,8 @@ export function Home() {
                 </div>
               </Link>
             </div>
-            <div className="flex w-full items-center justify-center">
-              <div className="hero-spotify mt-16 flex h-[14vh] items-center justify-center md:hidden">
+            <div className="no-scrollbar flex w-full items-center justify-center">
+              <div className="no-scrollbar hero-spotify mt-16 flex h-[14vh] items-center justify-center md:hidden">
                 <HeroSpotifyPlaylist />
               </div>
             </div>

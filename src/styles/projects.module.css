@@ -63,6 +63,8 @@
   cursor: pointer;
   transition: all 0.2s;
   text-transform: uppercase;
+  gap: 21px;
+  text-wrap: none;
 }
 .project:last-of-type {
   border-bottom: 1px solid #a3a3a3;

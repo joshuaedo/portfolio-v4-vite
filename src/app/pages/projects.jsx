@@ -21,7 +21,7 @@ function Project({ index, title, setModal, year, slug }) {
       }}
       className={`${styles.project} text-reveal`}
     >
-      <h2 className='section-text'>{title}</h2>
+      <h2 className='section-text truncate'>{title}</h2>
       <p className='text-xs md:text-sm'>{year}</p>
     </Link>
   );

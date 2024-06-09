@@ -1,73 +1,15 @@
 import Image, { Arrow } from '@/components/ui/image';
 import { projects } from '@/db/projects';
-import gsap from 'gsap';
-import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styles from '@/styles/projects.module.css';
+import useAnimation from '@/hooks/use-animation';
+import { textReveal } from '@/lib/anim';
+import { SlugMeta } from '@/components/layout/meta';
 
 export function Slug() {
+  useAnimation(textReveal);
   const { slug } = useParams();
-  const project = projects.filter((p) => p.slug === slug);
-  console.log(project[0]);
-
-  const SlugMeta = () => {
-    return (
-      <head>
-        {/* Browser */}
-        <meta
-          name='description'
-          content={`${project[0].overview}... ${project[0]?.description}`}
-        />
-        <meta name='current_path' content='/projects/:slug' />
-        <meta
-          name='subject'
-          content={`Joshua Edo • Projects • ${project[0].title}`}
-        />
-        <meta name='url' content='https://www.joshuaedo.com/projects/:slug' />
-        <meta
-          name='identifier-URL'
-          content='https://www.joshuaedo.com/projects/:slug'
-        />
-        <meta
-          name='pagename'
-          content={`Joshua Edo • Projects • ${project[0].title}`}
-        />
-        <meta
-          name='title'
-          content={`Joshua Edo • Projects • ${project[0].title}`}
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property='og:title'
-          content={`Joshua Edo • Projects • ${project[0].title}`}
-        />
-        <meta property='og:description' content={project[0].overview} />
-        <meta
-          property='og:url'
-          content='https://joshuaedo.com/projects/:slug'
-        />
-
-        {/* Twitter */}
-        <meta
-          name='twitter:title'
-          content={`Joshua Edo • Projects • ${project[0].title}`}
-        />
-        <meta name='twitter:description' content={project[0].overview} />
-
-        <title>{`Joshua Edo • Projects • ${project[0].title}`}</title>
-      </head>
-    );
-  };
-
-  useEffect(() => {
-    gsap.to('.text-reveal', {
-      y: 0,
-      stagger: 0.1,
-      delay: 0.5,
-      duration: 0.2,
-    });
-  }, []);
+  const project = projects?.filter((p) => p.slug === slug);
 
   return (
     <>

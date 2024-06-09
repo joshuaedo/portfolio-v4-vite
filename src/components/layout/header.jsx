@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useContext } from 'react';
-import gsap from 'gsap';
 import SpotifyPlaylist, { SpotifyLogo } from '../ui/spotify';
 import { HeaderContext } from './providers';
+import useAnimation from '@/hooks/use-animation';
+import { textReveal } from '@/lib/anim';
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,14 +18,7 @@ export default function Header() {
     setIsHovered(false);
   };
 
-  useEffect(() => {
-    gsap.to('.text-reveal', {
-      y: 0,
-      stagger: 0.1,
-      delay: 0.5,
-      duration: 0.2,
-    });
-  }, []);
+  useAnimation(textReveal);
 
   useEffect(() => {
     setTimeout(() => {

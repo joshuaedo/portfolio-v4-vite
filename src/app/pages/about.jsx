@@ -1,20 +1,14 @@
-import { useEffect, useState } from 'react';
-import gsap from 'gsap';
+import { useState } from 'react';
 import styles from '@/styles/avatar.module.css';
 import { AboutMeta } from '@/components/layout/meta.jsx';
 import Card, { CardTop } from '@/components/ui/card.jsx';
 import { Arrow } from '@/components/ui/image';
 import { aboutData } from '@/db/about';
+import useAnimation from '@/hooks/use-animation';
+import { textReveal } from '@/lib/anim';
 
 export function About() {
-  useEffect(() => {
-    gsap.to('.text-reveal', {
-      y: 0,
-      stagger: 0.1,
-      delay: 0.5,
-      duration: 0.2,
-    });
-  }, []);
+  useAnimation(textReveal);
 
   return (
     <>

@@ -3,19 +3,13 @@ import { useState } from 'react';
 import Modal from '@/components/ui/modal.jsx';
 import { projects } from '@/db/projects.js';
 import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { useEffect } from 'react';
 import { ProjectsMeta } from '@/components/layout/meta.jsx';
+import useAnimation from '@/hooks/use-animation';
+import { textReveal } from '@/lib/anim';
 
 function Project({ index, title, setModal, year, slug }) {
-  useEffect(() => {
-    gsap.to('.text-reveal', {
-      y: 0,
-      stagger: 0.1,
-      delay: 0.5,
-      duration: 0.2,
-    });
-  }, []);
+  useAnimation(textReveal);
+
   return (
     <Link
       to={`/projects/${slug}`}

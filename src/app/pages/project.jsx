@@ -114,7 +114,9 @@ export function Slug() {
                 to={`/projects/${project[0].next?.slug}`}
                 className={styles.project}
               >
-                <h2 className='section-text'>{project[0].next?.title}</h2>
+                <h2 className='section-text truncate'>
+                  {project[0].next?.title}
+                </h2>
                 <p className='text-xs md:text-sm'>{project[0]?.next.year}</p>
               </Link>
             </div>

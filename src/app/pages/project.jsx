@@ -59,6 +59,14 @@ export function Slug() {
                 {project[0].href && (
                   <div>
                     <a
+                      onClick={() => {
+                        if (slug === 'jquerius') {
+                          window.open(
+                            'https://jquerius.onrender.com',
+                            '_blank'
+                          );
+                        }
+                      }}
                       href={project[0]?.href}
                       className='flex items-center justify-center'
                     >

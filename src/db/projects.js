@@ -1,6 +1,20 @@
 // tech: languages, frameworks, api, semi-frameworks, stylers, animators
 const allProjects = [
   {
+    title: 'Knowledge Fountain School',
+    src: 'knf-school',
+    slug: 'knf-school',
+    code: null,
+    tech: 'Typescript, ViteJs, Tailwind, Framer-Motion, GSAP',
+    href: 'https://knowledgefountainschool.com',
+    year: 2024,
+    demo: null,
+    overview: "Nurturing Excellence in Learning and Character.",
+    description: "Knowledge Fountain School is an educational institution dedicated to providing a nurturing environment for academic excellence and character development. Our goal is to shape future leaders through quality education and strong moral values.",
+    documentation: 'https://github.com/knowledgefountain/landing-page#readme',
+    isDisplayed: true,
+  },
+  {
     title: 'Shop Josh',
     src: 'shop',
     slug: 'shop-josh',

@@ -79,13 +79,13 @@ export function Home() {
             <div className='mb-16 mt-20 md:mt-40'>
               <div className='inline items-center justify-around space-y-32 md:flex md:space-y-1'>
                 <div className='space-y-32'>
-                  <ProjectsCard i={4} name='knf school' />
+                  <ProjectsCard i={6} name='knf school' />
                   <ProjectsCard i={2} name='sandra' />
-                  <ProjectsCard i={3} name='shop josh' />
+                  <ProjectsCard i={2} name='ecommerce engine' />
                 </div>
                 <div className='space-y-32'>
+                  <ProjectsCard i={3} name='shop josh' />
                   <ProjectsCard i={4} name='z' />
-                  <ProjectsCard i={2} name='ecommerce engine' />
                 </div>
               </div>
             </div>

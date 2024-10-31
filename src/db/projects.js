@@ -10,7 +10,7 @@ const allProjects = [
     year: 2024,
     demo: null,
     overview: "Nurturing Excellence in Learning and Character.",
-    description: "Knowledge Fountain School is an educational institution dedicated to providing a nurturing environment for academic excellence and character development. Our goal is to shape future leaders through quality education and strong moral values.",
+    description: "Knowledge Fountain School is an educational institution dedicated to providing a nurturing environment for academic excellence and character development.",
     documentation: 'https://github.com/knowledgefountain/landing-page#readme',
     isDisplayed: true,
   },

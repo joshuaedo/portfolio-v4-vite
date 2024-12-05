@@ -1,6 +1,22 @@
 // tech: languages, frameworks, api, semi-frameworks, stylers, animators
 const allProjects = [
   {
+    title: 'Birthday',
+    src: 'birthday',
+    slug: 'birthday',
+    code: 'birthday',
+    tech: 'Typescript, ViteJs, Tailwind, Framer-Motion, GSAP',
+    href: 'https://birthday.joshuaedo.com',
+    year: 2024,
+    demo: 'https://x.com/i/status/1861917848089579811',
+    overview:
+      "Having a birthday at the year's end is the perfect excuse for a personal year-in-review. So, let's do that.",
+    description:
+      'This site is a *special one*, live only once a year on November 28th—my birthday.',
+    documentation: 'https://github.com/joshuaedo/birthday#readme',
+    isDisplayed: true,
+  },
+  {
     title: 'Knowledge Fountain School',
     src: 'knf-school',
     slug: 'knf-school',
@@ -8,9 +24,10 @@ const allProjects = [
     tech: 'Typescript, ViteJs, Tailwind, Framer-Motion, GSAP',
     href: 'https://knowledgefountainschool.com',
     year: 2024,
-    demo: null,
-    overview: "Nurturing Excellence in Learning and Character.",
-    description: "Knowledge Fountain School is an educational institution dedicated to providing a nurturing environment for academic excellence and character development.",
+    demo: 'https://x.com/i/status/1852069924208079113',
+    overview: 'Nurturing Excellence in Learning and Character.',
+    description:
+      'Knowledge Fountain School is an educational institution dedicated to providing a nurturing environment for academic excellence and character development.',
     documentation: 'https://github.com/knowledgefountain/landing-page#readme',
     isDisplayed: true,
   },
@@ -22,7 +39,7 @@ const allProjects = [
     tech: 'Typescript, NextJs, ECE, React-Query, Tailwind, Framer-Motion, GSAP',
     href: 'https://shop.joshuaedo.com',
     year: 2024,
-    demo: null,
+    demo: 'https://x.com/i/status/1842650579807645836',
     overview: "Live like Josh's alter ego, j@28.",
     description: null,
     documentation: 'https://github.com/joshuaedo/shop#readme',
@@ -81,7 +98,7 @@ const allProjects = [
     tech: 'Typescript, NextJs, Next-Auth, Hygraph, Sass, Tailwind, Framer-Motion, GSAP',
     href: 'https://sandraokpara.com',
     year: 2023,
-    demo: null,
+    demo: 'https://x.com/i/status/1729186576503280117',
     overview: 'Writing on Earth.',
     description:
       "This blog is a canvas for Sandra Okpara's diverse range of interests.",
@@ -96,7 +113,7 @@ const allProjects = [
     tech: 'Typescript, NextJs, Prisma, Next-Auth, React-Query, Upload-Thing, Tailwind',
     href: 'https://z.joshuaedo.com',
     year: 2023,
-    demo: null,
+    demo: 'https://x.com/j0shuaedo/status/1705674020866183261',
     overview: 'Join the conversation.',
     description:
       'A community-oriented social network inspired by Reddit and Twitter.',
